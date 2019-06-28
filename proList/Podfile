@@ -1,0 +1,20 @@
+use_frameworks!
+platform :ios, '9.0'
+
+
+def shared_pod
+    pod 'AFNetworking'
+    pod 'SDWebImage'
+    pod 'MJRefresh'
+    pod 'Reachability'
+    pod 'PINCache'
+    pod 'Masonry'
+    pod 'SVProgressHUD'
+    
+end
+
+target 'proList' do
+    
+    shared_pod
+    
+end

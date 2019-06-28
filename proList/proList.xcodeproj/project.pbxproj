@@ -13,6 +13,7 @@
 		81BEA38822C656430031E3AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38722C656430031E3AA /* Assets.xcassets */; };
 		81BEA38B22C656430031E3AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38922C656430031E3AA /* LaunchScreen.storyboard */; };
 		81BEA38E22C656430031E3AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA38D22C656430031E3AA /* main.m */; };
+		81BEA39522C6592F0031E3AA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA39422C6592F0031E3AA /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		81BEA38A22C656430031E3AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81BEA38C22C656430031E3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BEA38D22C656430031E3AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		81BEA39422C6592F0031E3AA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		81BEA37222C656410031E3AA = {
 			isa = PBXGroup;
 			children = (
+				81BEA39422C6592F0031E3AA /* Podfile */,
 				81BEA37D22C656410031E3AA /* proList */,
 				81BEA37C22C656410031E3AA /* Products */,
 			);
@@ -130,6 +133,7 @@
 			files = (
 				81BEA38B22C656430031E3AA /* LaunchScreen.storyboard in Resources */,
 				81BEA38822C656430031E3AA /* Assets.xcassets in Resources */,
+				81BEA39522C6592F0031E3AA /* Podfile in Resources */,
 				81BEA38622C656410031E3AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
