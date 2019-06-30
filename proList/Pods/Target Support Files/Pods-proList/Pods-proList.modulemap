@@ -1,0 +1,6 @@
+framework module Pods_proList {
+  umbrella header "Pods-proList-umbrella.h"
+
+  export *
+  module * { export * }
+}
