@@ -11,7 +11,23 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AppNavigator : NSObject
+    @property (nonatomic, strong) UINavigationController *mainNav;
+    
++ (instancetype)navigator;
++ (UIViewController *)getTopViewController;
++ (void)openFirstViewController;
++ (void)openMainViewController;
++ (void)openLoginViewController;
++ (void)openStartPicViewController;
+    
++ (void)pushToLoginViewController;
++ (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
++ (void)popViewControllerAnimated:(BOOL)animated;
++ (void)popToRootViewControllerAnimated:(BOOL) animated;
 
++ (void)openWebViewController;
+    
++ (void)showModalViewController:(UIViewController *)viewController animated:(BOOL)animated;
 @end
 
 NS_ASSUME_NONNULL_END

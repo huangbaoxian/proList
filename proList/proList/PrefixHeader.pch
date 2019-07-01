@@ -13,6 +13,15 @@
 #import "UIImage+Addtional.h"
 #import "UIDevice+Addtional.h"
 #import "UIDevice+UIDeviceExt.h"
+#import <MJExtension/MJExtension.h>
+#import "LoginViewController.h"
+#import "AppContext.h"
+#import "AppNavigator.h"
+#import "HBXWebViewController.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+
+
+
 ///Users/huangbaoxian/Documents/iOSWorkSpace/proList/proList/PrefixHeader.pch
 //Showing All Messages
 //:-1: Build input file cannot be found: ''
@@ -25,7 +34,7 @@ blue:((float)(rgbValue & 0x0000FF))/255.0 \
 alpha:1.0]
 
 #define  kTabbarSafeBottomMargin        (IS_IPHONE_X ? 34.f : 0.f)
-
+#define APPCONTEXT  [AppContext getInstance]
 
 #define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 
@@ -55,6 +64,8 @@ alpha:alphaValue]
  */
 #define PHONE_STATUSBAR_HEIGHT (IS_IPHONE_X?44.0f:20.0f)
 #define IS_IPHONE_X (((SCREEN_HEIGHT >= 812.0f) && ![UIDevice isiPad]) ? YES : NO)
+#define kCalendarBasicColor UIColorFromRGB(0x4bccbc)  
+#define AppHTMLColor(html) [UIColor colorWithHexString:html]
 
 
 #endif /* PrefixHeader_pch */

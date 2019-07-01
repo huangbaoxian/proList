@@ -27,6 +27,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+                   
+    [ self.window makeKeyWindow];
+    [self.window makeKeyAndVisible];
+    
+    [AppNavigator openWebViewController];
     JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
     entity.types = JPAuthorizationOptionAlert|JPAuthorizationOptionBadge|JPAuthorizationOptionSound|UNAuthorizationOptionProvidesAppNotificationSettings;
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
