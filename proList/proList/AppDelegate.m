@@ -20,6 +20,10 @@
 @end
 
 @implementation AppDelegate
++ (UIWindow *)mainWindow {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    return appDelegate.window;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

@@ -20,6 +20,15 @@
 		81478F3F22C8578C00B5F374 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3E22C8578B00B5F374 /* AdSupport.framework */; };
 		81478F4122C8579C00B5F374 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F4022C8579C00B5F374 /* UserNotifications.framework */; };
 		81478F4322C857B500B5F374 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F4222C857B500B5F374 /* libresolv.tbd */; };
+		81478F4822C8C7BE00B5F374 /* AppNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F4722C8C7BE00B5F374 /* AppNavigator.m */; };
+		81478F4B22C8C7D500B5F374 /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F4A22C8C7D500B5F374 /* TabbarViewController.m */; };
+		81478F4F22C8C86000B5F374 /* ZJTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F4E22C8C86000B5F374 /* ZJTabbar.m */; };
+		81478F5422C8CF4800B5F374 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F5222C8CF4800B5F374 /* UIView+Additions.m */; };
+		81478F5722C8CFC800B5F374 /* RootNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F5622C8CFC800B5F374 /* RootNavViewController.m */; };
+		81478F5A22C8D0B300B5F374 /* UIImage+Addtional.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F5922C8D0B300B5F374 /* UIImage+Addtional.m */; };
+		81478F5D22C8D1C200B5F374 /* UIDevice+Addtional.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F5C22C8D1C200B5F374 /* UIDevice+Addtional.m */; };
+		81478F6022C8D22100B5F374 /* UIDevice+UIDeviceExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F5F22C8D22100B5F374 /* UIDevice+UIDeviceExt.m */; };
+		81478F6322C8D2C300B5F374 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F6222C8D2C300B5F374 /* NSString+MD5Addition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		81BEA38022C656410031E3AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA37F22C656410031E3AA /* AppDelegate.m */; };
 		81BEA38322C656410031E3AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA38222C656410031E3AA /* ViewController.m */; };
 		81BEA38622C656410031E3AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38422C656410031E3AA /* Main.storyboard */; };
@@ -45,6 +54,25 @@
 		81478F4022C8579C00B5F374 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		81478F4222C857B500B5F374 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		81478F4422C857CF00B5F374 /* proList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = proList.entitlements; sourceTree = "<group>"; };
+		81478F4622C8C7BE00B5F374 /* AppNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppNavigator.h; sourceTree = "<group>"; };
+		81478F4722C8C7BE00B5F374 /* AppNavigator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppNavigator.m; sourceTree = "<group>"; };
+		81478F4922C8C7D500B5F374 /* TabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabbarViewController.h; sourceTree = "<group>"; };
+		81478F4A22C8C7D500B5F374 /* TabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
+		81478F4D22C8C86000B5F374 /* ZJTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJTabbar.h; sourceTree = "<group>"; };
+		81478F4E22C8C86000B5F374 /* ZJTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJTabbar.m; sourceTree = "<group>"; };
+		81478F5022C8C8EA00B5F374 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		81478F5222C8CF4800B5F374 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		81478F5322C8CF4800B5F374 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		81478F5522C8CFC800B5F374 /* RootNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootNavViewController.h; sourceTree = "<group>"; };
+		81478F5622C8CFC800B5F374 /* RootNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootNavViewController.m; sourceTree = "<group>"; };
+		81478F5822C8D0B300B5F374 /* UIImage+Addtional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addtional.h"; sourceTree = "<group>"; };
+		81478F5922C8D0B300B5F374 /* UIImage+Addtional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addtional.m"; sourceTree = "<group>"; };
+		81478F5B22C8D1C200B5F374 /* UIDevice+Addtional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Addtional.h"; sourceTree = "<group>"; };
+		81478F5C22C8D1C200B5F374 /* UIDevice+Addtional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Addtional.m"; sourceTree = "<group>"; };
+		81478F5E22C8D22000B5F374 /* UIDevice+UIDeviceExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+UIDeviceExt.h"; sourceTree = "<group>"; };
+		81478F5F22C8D22100B5F374 /* UIDevice+UIDeviceExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+UIDeviceExt.m"; sourceTree = "<group>"; };
+		81478F6122C8D2C300B5F374 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		81478F6222C8D2C300B5F374 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
 		81BEA37B22C656410031E3AA /* proList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BEA37E22C656410031E3AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81BEA37F22C656410031E3AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +120,46 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		81478F4522C8C7A700B5F374 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				81478F4C22C8C83000B5F374 /* model */,
+				81478F4622C8C7BE00B5F374 /* AppNavigator.h */,
+				81478F4722C8C7BE00B5F374 /* AppNavigator.m */,
+				81478F4922C8C7D500B5F374 /* TabbarViewController.h */,
+				81478F4A22C8C7D500B5F374 /* TabbarViewController.m */,
+				81478F5522C8CFC800B5F374 /* RootNavViewController.h */,
+				81478F5622C8CFC800B5F374 /* RootNavViewController.m */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		81478F4C22C8C83000B5F374 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				81478F4D22C8C86000B5F374 /* ZJTabbar.h */,
+				81478F4E22C8C86000B5F374 /* ZJTabbar.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		81478F5122C8CF3600B5F374 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				81478F6122C8D2C300B5F374 /* NSString+MD5Addition.h */,
+				81478F6222C8D2C300B5F374 /* NSString+MD5Addition.m */,
+				81478F5E22C8D22000B5F374 /* UIDevice+UIDeviceExt.h */,
+				81478F5F22C8D22100B5F374 /* UIDevice+UIDeviceExt.m */,
+				81478F5B22C8D1C200B5F374 /* UIDevice+Addtional.h */,
+				81478F5C22C8D1C200B5F374 /* UIDevice+Addtional.m */,
+				81478F5822C8D0B300B5F374 /* UIImage+Addtional.h */,
+				81478F5922C8D0B300B5F374 /* UIImage+Addtional.m */,
+				81478F5322C8CF4800B5F374 /* UIView+Additions.h */,
+				81478F5222C8CF4800B5F374 /* UIView+Additions.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		81BEA37222C656410031E3AA = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +182,8 @@
 		81BEA37D22C656410031E3AA /* proList */ = {
 			isa = PBXGroup;
 			children = (
+				81478F5122C8CF3600B5F374 /* common */,
+				81478F4522C8C7A700B5F374 /* main */,
 				81478F4422C857CF00B5F374 /* proList.entitlements */,
 				81BEA37E22C656410031E3AA /* AppDelegate.h */,
 				81BEA37F22C656410031E3AA /* AppDelegate.m */,
@@ -124,6 +194,7 @@
 				81BEA38922C656430031E3AA /* LaunchScreen.storyboard */,
 				81BEA38C22C656430031E3AA /* Info.plist */,
 				81BEA38D22C656430031E3AA /* main.m */,
+				81478F5022C8C8EA00B5F374 /* PrefixHeader.pch */,
 			);
 			path = proList;
 			sourceTree = "<group>";
@@ -280,8 +351,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81478F4B22C8C7D500B5F374 /* TabbarViewController.m in Sources */,
+				81478F4F22C8C86000B5F374 /* ZJTabbar.m in Sources */,
+				81478F5A22C8D0B300B5F374 /* UIImage+Addtional.m in Sources */,
+				81478F5722C8CFC800B5F374 /* RootNavViewController.m in Sources */,
 				81BEA38322C656410031E3AA /* ViewController.m in Sources */,
+				81478F6022C8D22100B5F374 /* UIDevice+UIDeviceExt.m in Sources */,
+				81478F4822C8C7BE00B5F374 /* AppNavigator.m in Sources */,
+				81478F5D22C8D1C200B5F374 /* UIDevice+Addtional.m in Sources */,
 				81BEA38E22C656430031E3AA /* main.m in Sources */,
+				81478F5422C8CF4800B5F374 /* UIView+Additions.m in Sources */,
+				81478F6322C8D2C300B5F374 /* NSString+MD5Addition.m in Sources */,
 				81BEA38022C656410031E3AA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +506,7 @@
 				CODE_SIGN_ENTITLEMENTS = proList/proList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22GWN3W844;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/proList/PrefixHeader.pch";
 				INFOPLIST_FILE = proList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,6 +526,7 @@
 				CODE_SIGN_ENTITLEMENTS = proList/proList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22GWN3W844;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/proList/PrefixHeader.pch";
 				INFOPLIST_FILE = proList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
