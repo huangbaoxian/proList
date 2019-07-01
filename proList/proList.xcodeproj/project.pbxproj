@@ -39,6 +39,21 @@
 		81478F8022C9CDF600B5F374 /* ZJStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F7F22C9CDF600B5F374 /* ZJStartViewController.m */; };
 		81478F8422C9CE2300B5F374 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F8322C9CE2300B5F374 /* LoginViewController.m */; };
 		81478F8822C9D31700B5F374 /* HBXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F8722C9D31700B5F374 /* HBXWebViewController.m */; };
+		81478F8D22C9EC8C00B5F374 /* UIColor+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F8922C9EC8C00B5F374 /* UIColor+LX.m */; };
+		81478F8E22C9EC8C00B5F374 /* UIImage+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F8A22C9EC8C00B5F374 /* UIImage+LX.m */; };
+		81478F9222C9ED5700B5F374 /* HBXHisHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F9122C9ED5700B5F374 /* HBXHisHomeViewController.m */; };
+		81478F9522C9EF2800B5F374 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F9422C9EF2800B5F374 /* NoteListViewController.m */; };
+		81478F9822C9EF7F00B5F374 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F9722C9EF7F00B5F374 /* MyViewController.m */; };
+		81478FA022C9F04D00B5F374 /* MyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F9F22C9F04D00B5F374 /* MyHeaderView.m */; };
+		81478FA322C9F2DD00B5F374 /* ZJBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FA222C9F2DD00B5F374 /* ZJBaseItem.m */; };
+		81478FA622C9F33A00B5F374 /* HBXMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FA522C9F33A00B5F374 /* HBXMyTableViewCell.m */; };
+		81478FA922C9F3AC00B5F374 /* ZJMySettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FA822C9F3AC00B5F374 /* ZJMySettingItem.m */; };
+		81478FAC22C9F43C00B5F374 /* NSObject-ClassName.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FAB22C9F43C00B5F374 /* NSObject-ClassName.m */; };
+		81478FAF22C9FEC000B5F374 /* HBXCreatNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FAE22C9FEC000B5F374 /* HBXCreatNoteViewController.m */; };
+		81478FB222C9FF8500B5F374 /* HBXHomeListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FB122C9FF8500B5F374 /* HBXHomeListCell.m */; };
+		81478FB522C9FF9C00B5F374 /* ZJHomdeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FB422C9FF9C00B5F374 /* ZJHomdeListModel.m */; };
+		81478FB822CA700400B5F374 /* HBXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FB722CA700400B5F374 /* HBXBaseViewController.m */; };
+		81478FBB22CA701700B5F374 /* HBXEditNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FBA22CA701700B5F374 /* HBXEditNoteViewController.m */; };
 		81BEA38022C656410031E3AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA37F22C656410031E3AA /* AppDelegate.m */; };
 		81BEA38322C656410031E3AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA38222C656410031E3AA /* ViewController.m */; };
 		81BEA38622C656410031E3AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38422C656410031E3AA /* Main.storyboard */; };
@@ -104,6 +119,36 @@
 		81478F8322C9CE2300B5F374 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		81478F8622C9D31700B5F374 /* HBXWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXWebViewController.h; sourceTree = "<group>"; };
 		81478F8722C9D31700B5F374 /* HBXWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXWebViewController.m; sourceTree = "<group>"; };
+		81478F8922C9EC8C00B5F374 /* UIColor+LX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LX.m"; sourceTree = "<group>"; };
+		81478F8A22C9EC8C00B5F374 /* UIImage+LX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LX.m"; sourceTree = "<group>"; };
+		81478F8B22C9EC8C00B5F374 /* UIImage+LX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LX.h"; sourceTree = "<group>"; };
+		81478F8C22C9EC8C00B5F374 /* UIColor+LX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LX.h"; sourceTree = "<group>"; };
+		81478F9022C9ED5700B5F374 /* HBXHisHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXHisHomeViewController.h; sourceTree = "<group>"; };
+		81478F9122C9ED5700B5F374 /* HBXHisHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXHisHomeViewController.m; sourceTree = "<group>"; };
+		81478F9322C9EF2800B5F374 /* NoteListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteListViewController.h; sourceTree = "<group>"; };
+		81478F9422C9EF2800B5F374 /* NoteListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteListViewController.m; sourceTree = "<group>"; };
+		81478F9622C9EF7F00B5F374 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		81478F9722C9EF7F00B5F374 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		81478F9E22C9F04D00B5F374 /* MyHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyHeaderView.h; sourceTree = "<group>"; };
+		81478F9F22C9F04D00B5F374 /* MyHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyHeaderView.m; sourceTree = "<group>"; };
+		81478FA122C9F2DD00B5F374 /* ZJBaseItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJBaseItem.h; sourceTree = "<group>"; };
+		81478FA222C9F2DD00B5F374 /* ZJBaseItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJBaseItem.m; sourceTree = "<group>"; };
+		81478FA422C9F33A00B5F374 /* HBXMyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXMyTableViewCell.h; sourceTree = "<group>"; };
+		81478FA522C9F33A00B5F374 /* HBXMyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXMyTableViewCell.m; sourceTree = "<group>"; };
+		81478FA722C9F3AC00B5F374 /* ZJMySettingItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJMySettingItem.h; sourceTree = "<group>"; };
+		81478FA822C9F3AC00B5F374 /* ZJMySettingItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJMySettingItem.m; sourceTree = "<group>"; };
+		81478FAA22C9F43C00B5F374 /* NSObject-ClassName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-ClassName.h"; sourceTree = "<group>"; };
+		81478FAB22C9F43C00B5F374 /* NSObject-ClassName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-ClassName.m"; sourceTree = "<group>"; };
+		81478FAD22C9FEC000B5F374 /* HBXCreatNoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXCreatNoteViewController.h; sourceTree = "<group>"; };
+		81478FAE22C9FEC000B5F374 /* HBXCreatNoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXCreatNoteViewController.m; sourceTree = "<group>"; };
+		81478FB022C9FF8500B5F374 /* HBXHomeListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXHomeListCell.h; sourceTree = "<group>"; };
+		81478FB122C9FF8500B5F374 /* HBXHomeListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXHomeListCell.m; sourceTree = "<group>"; };
+		81478FB322C9FF9C00B5F374 /* ZJHomdeListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJHomdeListModel.h; sourceTree = "<group>"; };
+		81478FB422C9FF9C00B5F374 /* ZJHomdeListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJHomdeListModel.m; sourceTree = "<group>"; };
+		81478FB622CA700400B5F374 /* HBXBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXBaseViewController.h; sourceTree = "<group>"; };
+		81478FB722CA700400B5F374 /* HBXBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXBaseViewController.m; sourceTree = "<group>"; };
+		81478FB922CA701700B5F374 /* HBXEditNoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXEditNoteViewController.h; sourceTree = "<group>"; };
+		81478FBA22CA701700B5F374 /* HBXEditNoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXEditNoteViewController.m; sourceTree = "<group>"; };
 		81BEA37B22C656410031E3AA /* proList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BEA37E22C656410031E3AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81BEA37F22C656410031E3AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -161,6 +206,8 @@
 				81478F4A22C8C7D500B5F374 /* TabbarViewController.m */,
 				81478F5522C8CFC800B5F374 /* RootNavViewController.h */,
 				81478F5622C8CFC800B5F374 /* RootNavViewController.m */,
+				81478FB622CA700400B5F374 /* HBXBaseViewController.h */,
+				81478FB722CA700400B5F374 /* HBXBaseViewController.m */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -177,6 +224,12 @@
 		81478F5122C8CF3600B5F374 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				81478FAA22C9F43C00B5F374 /* NSObject-ClassName.h */,
+				81478FAB22C9F43C00B5F374 /* NSObject-ClassName.m */,
+				81478F8C22C9EC8C00B5F374 /* UIColor+LX.h */,
+				81478F8922C9EC8C00B5F374 /* UIColor+LX.m */,
+				81478F8B22C9EC8C00B5F374 /* UIImage+LX.h */,
+				81478F8A22C9EC8C00B5F374 /* UIImage+LX.m */,
 				81478F6122C8D2C300B5F374 /* NSString+MD5Addition.h */,
 				81478F6222C8D2C300B5F374 /* NSString+MD5Addition.m */,
 				81478F5E22C8D22000B5F374 /* UIDevice+UIDeviceExt.h */,
@@ -223,6 +276,7 @@
 		81478F7C22C9CDD700B5F374 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				81478F8F22C9ED3E00B5F374 /* nodeHome */,
 				81478F8522C9D30500B5F374 /* webVc */,
 				81478F8122C9CE1900B5F374 /* login */,
 				81478F7D22C9CDE500B5F374 /* start */,
@@ -255,6 +309,51 @@
 				81478F8722C9D31700B5F374 /* HBXWebViewController.m */,
 			);
 			path = webVc;
+			sourceTree = "<group>";
+		};
+		81478F8F22C9ED3E00B5F374 /* nodeHome */ = {
+			isa = PBXGroup;
+			children = (
+				81478F9A22C9F01D00B5F374 /* model */,
+				81478F9922C9F01200B5F374 /* view */,
+				81478F9022C9ED5700B5F374 /* HBXHisHomeViewController.h */,
+				81478F9122C9ED5700B5F374 /* HBXHisHomeViewController.m */,
+				81478FAD22C9FEC000B5F374 /* HBXCreatNoteViewController.h */,
+				81478FAE22C9FEC000B5F374 /* HBXCreatNoteViewController.m */,
+				81478F9322C9EF2800B5F374 /* NoteListViewController.h */,
+				81478F9422C9EF2800B5F374 /* NoteListViewController.m */,
+				81478F9622C9EF7F00B5F374 /* MyViewController.h */,
+				81478F9722C9EF7F00B5F374 /* MyViewController.m */,
+				81478FB922CA701700B5F374 /* HBXEditNoteViewController.h */,
+				81478FBA22CA701700B5F374 /* HBXEditNoteViewController.m */,
+			);
+			path = nodeHome;
+			sourceTree = "<group>";
+		};
+		81478F9922C9F01200B5F374 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				81478F9E22C9F04D00B5F374 /* MyHeaderView.h */,
+				81478F9F22C9F04D00B5F374 /* MyHeaderView.m */,
+				81478FA422C9F33A00B5F374 /* HBXMyTableViewCell.h */,
+				81478FA522C9F33A00B5F374 /* HBXMyTableViewCell.m */,
+				81478FB022C9FF8500B5F374 /* HBXHomeListCell.h */,
+				81478FB122C9FF8500B5F374 /* HBXHomeListCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		81478F9A22C9F01D00B5F374 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				81478FA122C9F2DD00B5F374 /* ZJBaseItem.h */,
+				81478FA222C9F2DD00B5F374 /* ZJBaseItem.m */,
+				81478FA722C9F3AC00B5F374 /* ZJMySettingItem.h */,
+				81478FA822C9F3AC00B5F374 /* ZJMySettingItem.m */,
+				81478FB322C9FF9C00B5F374 /* ZJHomdeListModel.h */,
+				81478FB422C9FF9C00B5F374 /* ZJHomdeListModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		81BEA37222C656410031E3AA = {
@@ -456,23 +555,38 @@
 				81478F4B22C8C7D500B5F374 /* TabbarViewController.m in Sources */,
 				81478F4F22C8C86000B5F374 /* ZJTabbar.m in Sources */,
 				81478F5A22C8D0B300B5F374 /* UIImage+Addtional.m in Sources */,
+				81478FA022C9F04D00B5F374 /* MyHeaderView.m in Sources */,
 				81478F7B22C9AF2E00B5F374 /* AppUser.m in Sources */,
 				81478F7222C9ADB100B5F374 /* GFCalendarView.m in Sources */,
 				81478F7022C9ADB100B5F374 /* GFCalendarScrollView.m in Sources */,
+				81478F9522C9EF2800B5F374 /* NoteListViewController.m in Sources */,
+				81478FBB22CA701700B5F374 /* HBXEditNoteViewController.m in Sources */,
 				81478F8822C9D31700B5F374 /* HBXWebViewController.m in Sources */,
+				81478F8E22C9EC8C00B5F374 /* UIImage+LX.m in Sources */,
+				81478FB522C9FF9C00B5F374 /* ZJHomdeListModel.m in Sources */,
 				81478F5722C8CFC800B5F374 /* RootNavViewController.m in Sources */,
+				81478FAC22C9F43C00B5F374 /* NSObject-ClassName.m in Sources */,
+				81478FA922C9F3AC00B5F374 /* ZJMySettingItem.m in Sources */,
+				81478FB822CA700400B5F374 /* HBXBaseViewController.m in Sources */,
+				81478FB222C9FF8500B5F374 /* HBXHomeListCell.m in Sources */,
 				81BEA38322C656410031E3AA /* ViewController.m in Sources */,
 				81478F6022C8D22100B5F374 /* UIDevice+UIDeviceExt.m in Sources */,
 				81478F4822C8C7BE00B5F374 /* AppNavigator.m in Sources */,
 				81478F5D22C8D1C200B5F374 /* UIDevice+Addtional.m in Sources */,
 				81478F8422C9CE2300B5F374 /* LoginViewController.m in Sources */,
+				81478FA622C9F33A00B5F374 /* HBXMyTableViewCell.m in Sources */,
 				81478F7422C9ADB100B5F374 /* GFCalendarMonth.m in Sources */,
+				81478FA322C9F2DD00B5F374 /* ZJBaseItem.m in Sources */,
 				81478F7822C9AF1100B5F374 /* AppContext.m in Sources */,
 				81BEA38E22C656430031E3AA /* main.m in Sources */,
 				81478F5422C8CF4800B5F374 /* UIView+Additions.m in Sources */,
 				81478F6322C8D2C300B5F374 /* NSString+MD5Addition.m in Sources */,
 				81478F7122C9ADB100B5F374 /* GFCalendarCell.m in Sources */,
+				81478FAF22C9FEC000B5F374 /* HBXCreatNoteViewController.m in Sources */,
+				81478F9822C9EF7F00B5F374 /* MyViewController.m in Sources */,
 				81BEA38022C656410031E3AA /* AppDelegate.m in Sources */,
+				81478F9222C9ED5700B5F374 /* HBXHisHomeViewController.m in Sources */,
+				81478F8D22C9EC8C00B5F374 /* UIColor+LX.m in Sources */,
 				81478F7322C9ADB100B5F374 /* NSDate+GFCalendar.m in Sources */,
 				81478F8022C9CDF600B5F374 /* ZJStartViewController.m in Sources */,
 			);

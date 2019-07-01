@@ -9,6 +9,8 @@
 #import "TabbarViewController.h"
 #import "AppDelegate.h"
 #import "ZJTabbar.h"
+#import "HBXHisHomeViewController.h"
+#import "NoteListViewController.h"
 //#import "EaseConversationListViewController.h"
 
 //#import "ZJLocationManager.h"
@@ -47,14 +49,11 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //    [[AVAudioSession sharedInstance] setActive:NO withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:nil];
-    //    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait];
-    
-    
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+   
     [self _initTabBarView];
     [self _initSubviewController];
-   
+    [self changeToIndex:0];
     
 }
    
@@ -99,12 +98,12 @@
     _subviewNaviControllers = [NSMutableArray array];
 
         
-    UIViewController *classSell = [UIViewController new];
+    HBXHisHomeViewController *classSell = [HBXHisHomeViewController new];
     RootNavViewController *classSellNav = [[RootNavViewController alloc] initWithRootViewController:classSell];
     [_subviewNaviControllers addObject:classSellNav];
     
     
-    UIViewController *myCourse = [UIViewController new];
+    NoteListViewController *myCourse = [NoteListViewController new];
     RootNavViewController *myCourseNav = [[RootNavViewController alloc] initWithRootViewController:myCourse];
     [_subviewNaviControllers addObject:myCourseNav];
     
