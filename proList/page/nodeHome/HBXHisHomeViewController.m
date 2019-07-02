@@ -11,7 +11,7 @@
 #import "ZJHomdeListModel.h"
 #import "HBXCreatNoteViewController.h"
 
-@interface HBXHisHomeViewController ()
+@interface HBXHisHomeViewController ()<UITableViewDelegate, UITableViewDataSource>
     
 @property (nonatomic, strong) UITableView *tableView;
     
@@ -27,7 +27,18 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupNavBar];
+    [self initViews];
     self.navigationItem.rightBarButtonItem = self.rightBtnItem;
+    
+    NSArray *list = [ToolHelper getNoteList];
+    NSLog(@"%@", list);
+    NSArray *data = [ZJHomdeListModel mj_objectArrayWithKeyValuesArray:list];
+    [self.dataArray addObjectsFromArray:data];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+    });
+    
 }
 - (void)setupNavBar {
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:AppFont(18), NSForegroundColorAttributeName:SYS_White_Color}];
@@ -40,35 +51,25 @@
     HBXCreatNoteViewController *vc = [[HBXCreatNoteViewController alloc] init];
     [AppNavigator pushViewController:vc animated:YES];
 }
-    
-    
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.dataArray.count;
 }
-    
-    
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSArray *array = self.dataArray[section];
-    return array.count;
-}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    ZJHomdeListModel *item = nil;
-    NSArray *array = self.dataArray[indexPath.section];
-    item = [array objectAtIndex:indexPath.row];
+    ZJHomdeListModel *item = self.dataArray[indexPath.row];
     return item.cellHeight;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     HBXHomeListCell *object = nil;
-    NSArray *array = self.dataArray[indexPath.section];
-    object = [array objectAtIndex:indexPath.row];
-    
+    object = self.dataArray[indexPath.row];
 }
+
+
     
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    id object = nil;
-    NSMutableArray *array = self.dataArray[indexPath.section];
-    object = array[indexPath.row];
+    id object = self.dataArray[indexPath.row];
     
     HBXHomeListCell *cell = nil;
     

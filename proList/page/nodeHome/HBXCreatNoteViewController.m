@@ -33,7 +33,7 @@
 }
     
 - (void)btnClick {
-    HBXEditNoteViewController *vc = [[HBXEditNoteViewController alloc] init];
+    HBXEditNoteViewController *vc = [[HBXEditNoteViewController alloc] initWithDate:self.date];
     [self.navigationController pushViewController:vc animated:YES];
     
 }
@@ -51,9 +51,8 @@
 - (void)setupCalendarView {
     GFCalendarView *calendarView = [[GFCalendarView alloc] initWithFrameOrigin:CGPointMake(15, 30) width:kScreen_WIDTH-2*15];
     calendarView.didSelectDayHandler = ^(NSInteger year, NSInteger month, NSInteger day) {
-        NSLog(@"=====%zd=====%zd=====%zd", year, month, day);
-        
         self.date = [NSString stringWithFormat:@"%zd-%02zd-%02zd", year, month, day];
+        NSLog(@"self.date: %@",self.date);
     };
     [self.view addSubview:calendarView];
     [self.view addSubview:self.creatNewButton];

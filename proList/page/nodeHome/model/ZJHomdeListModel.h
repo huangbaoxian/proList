@@ -13,7 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZJHomdeListModel : NSObject
     
 @property (nonatomic, assign) CGFloat cellHeight;
-    
+@property (nonatomic, strong) NSString *content;
+@property (nonatomic, assign) HBXEditType type;
+@property (nonatomic, assign) CGFloat imageHeight;
+@property (nonatomic, assign) CGFloat imageWidth;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *date;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

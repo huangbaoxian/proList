@@ -28,7 +28,6 @@
     
 + (void)openFirstViewController{
     if ([APPCONTEXT checkLoginInfo]) {
-        //            [GeTuiSdk bindAlias:APPCONTEXT.currentUser.userId andSequenceNum:@"seq-1"];
         [AppNavigator openMainViewController];
     }else{
         [AppNavigator openLoginViewController];
@@ -44,11 +43,12 @@
     {
         TabbarViewController *vc = [[TabbarViewController alloc] init];
         [AppNavigator openMainNavControllerWithRoot:vc];
+        
     }
 + (void)openStartPicViewController{
     ZJStartViewController *startVC = [[ZJStartViewController alloc] init];
     [AppDelegate mainWindow].rootViewController = startVC;
-    //    [AppNavigator navigator].mainNav = startVC;
+    [AppNavigator navigator].mainNav = startVC;
 }
     
     
@@ -117,25 +117,16 @@
 }
 + (void)showModalViewController:(UIViewController *)viewController animated:(BOOL)animated
     {
+        NSLog(@"mainNav: %@", [AppNavigator navigator].mainNav);
         if ([AppNavigator navigator].mainNav != nil) {
             if ([[AppNavigator navigator].mainNav presentedViewController]) {
                 UIViewController *presentCon = [[AppNavigator navigator].mainNav presentedViewController];
-                while (1) {
-                    UIViewController *presentConTmp = [presentCon presentedViewController];
-                    if (presentConTmp && [presentConTmp isKindOfClass:[UINavigationController class]]) {
-                        presentCon = presentConTmp;
-                    }else{
-                        break;
-                    }
-                }
                 viewController.popoverPresentationController.sourceView = presentCon.view;
                 CGRectMake(SCREEN_WIDTH/4, SCREEN_HEIGHT/4,SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
                 [presentCon presentViewController:viewController animated:animated completion:nil];
             } else {
-                
                 viewController.popoverPresentationController.sourceView = [AppNavigator navigator].mainNav.view;
                 viewController.popoverPresentationController.sourceRect = CGRectMake(SCREEN_WIDTH/4, SCREEN_HEIGHT/4,SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
-                
                 [[AppNavigator navigator].mainNav presentViewController:viewController animated:animated completion:nil];
             }
         }

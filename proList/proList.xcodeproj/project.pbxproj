@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		71FEBE951682B14A5B16B96C /* Pods_proList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7635F2765334EF77313E65 /* Pods_proList.framework */; };
+		813FD77F22CB058B00E48C7F /* ZJAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD77E22CB058B00E48C7F /* ZJAlertManager.m */; };
+		813FD78222CB0E4F00E48C7F /* UIButton+Addictions.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78022CB0E4F00E48C7F /* UIButton+Addictions.m */; };
+		813FD78522CB21AB00E48C7F /* HBXDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78422CB21AB00E48C7F /* HBXDetailViewController.m */; };
+		813FD78822CB292E00E48C7F /* HBXNoteDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78722CB292E00E48C7F /* HBXNoteDetailCell.m */; };
+		813FD78B22CB468A00E48C7F /* ToolHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78A22CB468A00E48C7F /* ToolHelper.m */; };
 		81478F2D22C8572500B5F374 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F2C22C8572500B5F374 /* CFNetwork.framework */; };
 		81478F2F22C8572F00B5F374 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F2E22C8572F00B5F374 /* CoreFoundation.framework */; };
 		81478F3122C8573D00B5F374 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3022C8573D00B5F374 /* CoreTelephony.framework */; };
@@ -54,6 +59,7 @@
 		81478FB522C9FF9C00B5F374 /* ZJHomdeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FB422C9FF9C00B5F374 /* ZJHomdeListModel.m */; };
 		81478FB822CA700400B5F374 /* HBXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FB722CA700400B5F374 /* HBXBaseViewController.m */; };
 		81478FBB22CA701700B5F374 /* HBXEditNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FBA22CA701700B5F374 /* HBXEditNoteViewController.m */; };
+		81478FBE22CAFA3700B5F374 /* MisManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FBD22CAFA3700B5F374 /* MisManager.m */; };
 		81BEA38022C656410031E3AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA37F22C656410031E3AA /* AppDelegate.m */; };
 		81BEA38322C656410031E3AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA38222C656410031E3AA /* ViewController.m */; };
 		81BEA38622C656410031E3AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38422C656410031E3AA /* Main.storyboard */; };
@@ -66,6 +72,16 @@
 /* Begin PBXFileReference section */
 		5C811926B5675EA042FA69D6 /* Pods-proList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proList/Pods-proList.debug.xcconfig"; sourceTree = "<group>"; };
 		5F7635F2765334EF77313E65 /* Pods_proList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		813FD77D22CB058A00E48C7F /* ZJAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAlertManager.h; sourceTree = "<group>"; };
+		813FD77E22CB058B00E48C7F /* ZJAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAlertManager.m; sourceTree = "<group>"; };
+		813FD78022CB0E4F00E48C7F /* UIButton+Addictions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addictions.m"; sourceTree = "<group>"; };
+		813FD78122CB0E4F00E48C7F /* UIButton+Addictions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Addictions.h"; sourceTree = "<group>"; };
+		813FD78322CB21AB00E48C7F /* HBXDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXDetailViewController.h; sourceTree = "<group>"; };
+		813FD78422CB21AB00E48C7F /* HBXDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXDetailViewController.m; sourceTree = "<group>"; };
+		813FD78622CB292E00E48C7F /* HBXNoteDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXNoteDetailCell.h; sourceTree = "<group>"; };
+		813FD78722CB292E00E48C7F /* HBXNoteDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXNoteDetailCell.m; sourceTree = "<group>"; };
+		813FD78922CB468A00E48C7F /* ToolHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolHelper.h; sourceTree = "<group>"; };
+		813FD78A22CB468A00E48C7F /* ToolHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolHelper.m; sourceTree = "<group>"; };
 		81478F2C22C8572500B5F374 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		81478F2E22C8572F00B5F374 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		81478F3022C8573D00B5F374 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -149,6 +165,8 @@
 		81478FB722CA700400B5F374 /* HBXBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXBaseViewController.m; sourceTree = "<group>"; };
 		81478FB922CA701700B5F374 /* HBXEditNoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXEditNoteViewController.h; sourceTree = "<group>"; };
 		81478FBA22CA701700B5F374 /* HBXEditNoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXEditNoteViewController.m; sourceTree = "<group>"; };
+		81478FBC22CAFA3700B5F374 /* MisManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MisManager.h; sourceTree = "<group>"; };
+		81478FBD22CAFA3700B5F374 /* MisManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MisManager.m; sourceTree = "<group>"; };
 		81BEA37B22C656410031E3AA /* proList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BEA37E22C656410031E3AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81BEA37F22C656410031E3AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -224,6 +242,10 @@
 		81478F5122C8CF3600B5F374 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				813FD78122CB0E4F00E48C7F /* UIButton+Addictions.h */,
+				813FD78022CB0E4F00E48C7F /* UIButton+Addictions.m */,
+				813FD77D22CB058A00E48C7F /* ZJAlertManager.h */,
+				813FD77E22CB058B00E48C7F /* ZJAlertManager.m */,
 				81478FAA22C9F43C00B5F374 /* NSObject-ClassName.h */,
 				81478FAB22C9F43C00B5F374 /* NSObject-ClassName.m */,
 				81478F8C22C9EC8C00B5F374 /* UIColor+LX.h */,
@@ -240,6 +262,10 @@
 				81478F5922C8D0B300B5F374 /* UIImage+Addtional.m */,
 				81478F5322C8CF4800B5F374 /* UIView+Additions.h */,
 				81478F5222C8CF4800B5F374 /* UIView+Additions.m */,
+				81478FBC22CAFA3700B5F374 /* MisManager.h */,
+				81478FBD22CAFA3700B5F374 /* MisManager.m */,
+				813FD78922CB468A00E48C7F /* ToolHelper.h */,
+				813FD78A22CB468A00E48C7F /* ToolHelper.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -326,6 +352,8 @@
 				81478F9722C9EF7F00B5F374 /* MyViewController.m */,
 				81478FB922CA701700B5F374 /* HBXEditNoteViewController.h */,
 				81478FBA22CA701700B5F374 /* HBXEditNoteViewController.m */,
+				813FD78322CB21AB00E48C7F /* HBXDetailViewController.h */,
+				813FD78422CB21AB00E48C7F /* HBXDetailViewController.m */,
 			);
 			path = nodeHome;
 			sourceTree = "<group>";
@@ -339,6 +367,8 @@
 				81478FA522C9F33A00B5F374 /* HBXMyTableViewCell.m */,
 				81478FB022C9FF8500B5F374 /* HBXHomeListCell.h */,
 				81478FB122C9FF8500B5F374 /* HBXHomeListCell.m */,
+				813FD78622CB292E00E48C7F /* HBXNoteDetailCell.h */,
+				813FD78722CB292E00E48C7F /* HBXNoteDetailCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -553,6 +583,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81478F4B22C8C7D500B5F374 /* TabbarViewController.m in Sources */,
+				813FD78822CB292E00E48C7F /* HBXNoteDetailCell.m in Sources */,
 				81478F4F22C8C86000B5F374 /* ZJTabbar.m in Sources */,
 				81478F5A22C8D0B300B5F374 /* UIImage+Addtional.m in Sources */,
 				81478FA022C9F04D00B5F374 /* MyHeaderView.m in Sources */,
@@ -566,10 +597,13 @@
 				81478FB522C9FF9C00B5F374 /* ZJHomdeListModel.m in Sources */,
 				81478F5722C8CFC800B5F374 /* RootNavViewController.m in Sources */,
 				81478FAC22C9F43C00B5F374 /* NSObject-ClassName.m in Sources */,
+				813FD78522CB21AB00E48C7F /* HBXDetailViewController.m in Sources */,
 				81478FA922C9F3AC00B5F374 /* ZJMySettingItem.m in Sources */,
 				81478FB822CA700400B5F374 /* HBXBaseViewController.m in Sources */,
+				813FD77F22CB058B00E48C7F /* ZJAlertManager.m in Sources */,
 				81478FB222C9FF8500B5F374 /* HBXHomeListCell.m in Sources */,
 				81BEA38322C656410031E3AA /* ViewController.m in Sources */,
+				813FD78B22CB468A00E48C7F /* ToolHelper.m in Sources */,
 				81478F6022C8D22100B5F374 /* UIDevice+UIDeviceExt.m in Sources */,
 				81478F4822C8C7BE00B5F374 /* AppNavigator.m in Sources */,
 				81478F5D22C8D1C200B5F374 /* UIDevice+Addtional.m in Sources */,
@@ -579,6 +613,7 @@
 				81478FA322C9F2DD00B5F374 /* ZJBaseItem.m in Sources */,
 				81478F7822C9AF1100B5F374 /* AppContext.m in Sources */,
 				81BEA38E22C656430031E3AA /* main.m in Sources */,
+				81478FBE22CAFA3700B5F374 /* MisManager.m in Sources */,
 				81478F5422C8CF4800B5F374 /* UIView+Additions.m in Sources */,
 				81478F6322C8D2C300B5F374 /* NSString+MD5Addition.m in Sources */,
 				81478F7122C9ADB100B5F374 /* GFCalendarCell.m in Sources */,
@@ -589,6 +624,7 @@
 				81478F8D22C9EC8C00B5F374 /* UIColor+LX.m in Sources */,
 				81478F7322C9ADB100B5F374 /* NSDate+GFCalendar.m in Sources */,
 				81478F8022C9CDF600B5F374 /* ZJStartViewController.m in Sources */,
+				813FD78222CB0E4F00E48C7F /* UIButton+Addictions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

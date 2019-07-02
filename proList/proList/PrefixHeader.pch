@@ -22,13 +22,18 @@
 #import <Masonry/Masonry.h>
 #import "ZJBaseItem.h"
 #import "NSObject-ClassName.h"
+#import "MisManager.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIView+WebCache.h>
+#import <SDWebImage/SDWebImageCoder.h>
+#import <SDWebImage/SDWebImageManager.h>
+#import <SDWebImage/SDWebImageOperation.h>
+#import "ZJAlertManager.h"
+#import "UIButton+Addictions.h"
+#import "ToolHelper.h"
 
 
-///Users/huangbaoxian/Documents/iOSWorkSpace/proList/proList/PrefixHeader.pch
-//Showing All Messages
-//:-1: Build input file cannot be found: ''
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
 #define UIColorFromRGB(rgbValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
