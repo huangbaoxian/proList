@@ -199,7 +199,8 @@
             
             NSString *url = [NSString stringWithFormat:@"http://localhost/%f.jpg",[[NSDate date] timeIntervalSinceNow]];
             model.content = url;
-            [[SDImageCache sharedImageCache] storeImage:self.image forKey:url completion:nil];           
+            [[SDImageCache sharedImageCache] storeImage:self.image forKey:url toDisk:YES completion: nil];
+                                    
             model.type = HBXEditTypeImage;
             model.imageWidth = self.image.size.width;
             model.imageHeight = self.image.size.height;

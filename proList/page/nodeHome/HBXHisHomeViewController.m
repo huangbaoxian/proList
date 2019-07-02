@@ -57,8 +57,8 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    ZJHomdeListModel *item = self.dataArray[indexPath.row];
-    return item.cellHeight;
+    ZJHomdeListModel *item = self.dataArray[indexPath.row];    
+    return 80;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

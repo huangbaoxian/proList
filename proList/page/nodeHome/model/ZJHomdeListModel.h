@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat imageWidth;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *date;
+@property (nonatomic, strong) NSString *image;
 
 
 @end
