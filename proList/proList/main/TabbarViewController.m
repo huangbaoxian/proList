@@ -11,11 +11,8 @@
 #import "ZJTabbar.h"
 #import "HBXHisHomeViewController.h"
 #import "NoteListViewController.h"
-//#import "EaseConversationListViewController.h"
-
-//#import "ZJLocationManager.h"
-
-
+#import "HBXModelListViewController.h"
+#import "MyViewController.h"
 
 
 @interface TabbarViewController ()
@@ -103,14 +100,14 @@
     [_subviewNaviControllers addObject:classSellNav];
     
     
-    NoteListViewController *myCourse = [NoteListViewController new];
+    HBXModelListViewController *myCourse = [HBXModelListViewController new];
     RootNavViewController *myCourseNav = [[RootNavViewController alloc] initWithRootViewController:myCourse];
     [_subviewNaviControllers addObject:myCourseNav];
     
     
    
     
-    UIViewController *me = [[UIViewController alloc] init];
+    MyViewController *me = [[MyViewController alloc] init];
     RootNavViewController *meNav = [[RootNavViewController alloc] initWithRootViewController:me];
     [_subviewNaviControllers addObject:meNav];
     

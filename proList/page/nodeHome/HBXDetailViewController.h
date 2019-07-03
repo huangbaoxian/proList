@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HBXDetailViewController : HBXBaseViewController
 
+- (instancetype)initWithParam:(NSDictionary *)param;
 - (void)addModel:(ZJHomdeListModel *)model;
 
 @end

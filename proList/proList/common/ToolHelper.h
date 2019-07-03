@@ -14,6 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)saveNote:(NSDictionary *)dict;
 + (NSArray *)getNoteList;
+
++ (void)saveModel:(NSDictionary *)dict;
++ (NSArray *)getModelList;
+
++ (UILabel *)getNormalLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END

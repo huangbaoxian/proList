@@ -10,9 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class ZJMySettingItem;
+
 @interface HBXMyTableViewCell : UITableViewCell
 
-- (void)cellHeightWithItem:(ZJBaseItem *)item;
+- (void)cellHeightWithItem:(ZJMySettingItem *)item;
     
 @end
 

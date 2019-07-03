@@ -147,6 +147,7 @@ alpha:alphaValue]
 
 #import "UIColor+LX.h"
 #import "UIImage+LX.h"
+#define KUPLOADIMAGEWIDTH 720
 
 // tag基数
 #define BASE_TAG 100
@@ -175,4 +176,14 @@ typedef NS_ENUM(NSUInteger, HBXEditType) {
     HBXEditTypeImage = 2,//解答完成
    
 };
+
+typedef NS_ENUM (NSInteger, ZJMySetType){
+    kSetMyInfo = 1,
+    KSetMessage = 2,//消息列表
+    kSetService = 3,//
+    kSetFeedBack = 4,//信息反馈
+  
+    
+};
+
 #endif /* PrefixHeader_pch */

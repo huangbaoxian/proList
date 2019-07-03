@@ -9,7 +9,7 @@
 #import "AppUser.h"
 
 @implementation AppUser
-- (void)setItemsWithDic:(NSDictionary *)dic{
+- (void)setItemsWithDic:(NSDictionary *)dic {
     self.avatarUrl = [dic objectForKey:@"avatarUrl"];
     self.nickName = [dic objectForKey:@"nickname"];
     if ([self.nickName isEqual:[NSNull null]]) {

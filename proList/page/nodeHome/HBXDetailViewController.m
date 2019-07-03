@@ -17,15 +17,31 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
+@property (nonatomic, strong) NSMutableDictionary *param;
 
 
 @end
 
 @implementation HBXDetailViewController
 
+- (instancetype)initWithParam:(NSDictionary *)param {
+    if (self = [super init]) {
+        _param = [NSMutableDictionary dictionaryWithDictionary:param];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initViews];
+    if (self.param.count > 0) {
+        NSArray *data = [ZJHomdeListModel mj_objectArrayWithKeyValuesArray:self.param[@"list"]];
+        [self.dataArray addObjectsFromArray:data];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    }
+    
     // Do any additional setup after loading the view.
 }
 

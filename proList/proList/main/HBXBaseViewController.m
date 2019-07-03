@@ -10,22 +10,68 @@
 
 @interface HBXBaseViewController ()
 
+@property (nonatomic, strong) UIImageView *emptView;
+@property (nonatomic, strong) UILabel *emptLabel;
+
+
 @end
 
 @implementation HBXBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self setupNavBar];
     // Do any additional setup after loading the view.
 }
+- (void)showEmptViewWithMessage:(NSString *)message {
+    
+    [self.view addSubview:self.emptView];
+    [self.view addSubview:self.emptLabel];
+    
+    self.emptLabel.width = SCREEN_WIDTH - 40;
+    self.emptLabel.height = 42;
+    self.emptView.center = self.view.center;
+    self.emptView.top = 350;;
+    self.emptLabel.centerX = self.view.centerX;
+    self.emptLabel.top = self.emptView.bottom + 30;
+    self.emptLabel.text = message;
+    
+}
+
+
 - (void)setupNavBar {
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:AppFont(18), NSForegroundColorAttributeName:SYS_White_Color}];
     self.navigationController.navigationBar.translucent = NO;
     [self.navigationController.navigationBar setBackgroundImage:[UIImage getImageWithColor:AppHTMLColor(@"4bccbc")] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
 }
+- (UIImageView *)emptView {
+    if (!_emptView) {
+        _emptView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"vc_list_empt"]];
+        _emptView.size = CGSizeMake(80, 80);
+        _emptView.userInteractionEnabled = YES;
+//        UITapGestureRecognizer *tapClick = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(refreshClick:)];
+//        [_emptView addGestureRecognizer:tapClick];
+        
+    }
+    return _emptView;
+}
 
+- (UILabel *)emptLabel {
+    if (!_emptLabel) {
+        _emptLabel = [[UILabel alloc] init];
+        _emptLabel.textAlignment = NSTextAlignmentCenter;
+        _emptLabel.textColor = UIColorFromRGB(0x999999);
+        _emptLabel.font = [UIFont  systemFontOfSize: 15.0];
+        _emptLabel.backgroundColor = [UIColor clearColor];
+        _emptLabel.userInteractionEnabled = YES;
+        
+        UITapGestureRecognizer *tapClick = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(refreshClick:)];
+        [_emptLabel addGestureRecognizer:tapClick];
+    }
+    return _emptLabel;
+}
 /*
 #pragma mark - Navigation
 

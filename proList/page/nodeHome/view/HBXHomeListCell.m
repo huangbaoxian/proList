@@ -31,7 +31,8 @@
 }
 
 - (void)cellHeightWithItem:(ZJHomdeListModel *)model {
-    UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:model.content];
+    UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:model.image];
+    NSLog(@"model.content: %@  %@", model.image, image);
     self.headView.image = image;
     self.contentLabel.text = model.title;
     self.dateLabel.text = model.date;
@@ -51,7 +52,7 @@
  
     [self.headView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.container);
-        make.trailing.equalTo(self.container).offset(15);
+        make.leading.equalTo(self.container).offset(15);
         make.width.height.mas_equalTo(40);
     }];
     

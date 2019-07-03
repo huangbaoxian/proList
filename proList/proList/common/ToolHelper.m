@@ -10,6 +10,8 @@
 
 
 #define KDATELIST @"dateList"
+
+#define KMODELLIST @"KMODELLIST"
 @implementation ToolHelper
 
 + (void)saveNote:(NSDictionary *)dict {
@@ -24,4 +26,25 @@
     NSArray *list = [[MisManager getInstance] HBXGetValueForKey:KDATELIST];
     return list;
 }
+
+
++ (void)saveModel:(NSDictionary *)dict {
+    NSArray *list = [[MisManager getInstance] HBXGetValueForKey:KMODELLIST];
+    NSMutableArray *creatList = [NSMutableArray arrayWithArray:list];
+    [creatList addObject:dict];
+    [[MisManager getInstance] HBXSetValue:creatList key:KMODELLIST];
+    
+}
++ (NSArray *)getModelList {
+    NSArray *list = [[MisManager getInstance] HBXGetValueForKey:KMODELLIST];
+    return list;
+}
+
++ (UILabel *)getNormalLabel {
+    UILabel *  _contentLabel = [[UILabel alloc] init];
+    _contentLabel.font = [UIFont systemFontOfSize:14.0];
+    _contentLabel.textColor = UIColorFromRGB(0x333333);
+    return _contentLabel;
+}
+
 @end

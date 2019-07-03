@@ -43,6 +43,8 @@
     self.headerView.layer.masksToBounds = YES;
     self.headerView.layer.cornerRadius = 45;
 
+    self.headerView.image = [UIImage imageNamed:@"icon-avater-default"];
+    self.nickNameLabel.text = @"随风的风";
 }
     
 - (UIImageView *)headerView {

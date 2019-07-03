@@ -13,6 +13,19 @@
 		813FD78522CB21AB00E48C7F /* HBXDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78422CB21AB00E48C7F /* HBXDetailViewController.m */; };
 		813FD78822CB292E00E48C7F /* HBXNoteDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78722CB292E00E48C7F /* HBXNoteDetailCell.m */; };
 		813FD78B22CB468A00E48C7F /* ToolHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78A22CB468A00E48C7F /* ToolHelper.m */; };
+		813FD78D22CCA6C500E48C7F /* controllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 813FD78C22CCA6C500E48C7F /* controllerConfig.json */; };
+		813FD79022CCB29200E48C7F /* HBXActionHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78F22CCB29200E48C7F /* HBXActionHeaderModel.m */; };
+		813FD79322CCB29D00E48C7F /* HBXActionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD79222CCB29D00E48C7F /* HBXActionModel.m */; };
+		813FD79622CCF6F900E48C7F /* HBXGoalSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD79522CCF6F900E48C7F /* HBXGoalSettingViewController.m */; };
+		813FD79922CD0CB100E48C7F /* HBXModelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD79822CD0CB100E48C7F /* HBXModelListViewController.m */; };
+		813FD79C22CD0D0300E48C7F /* HBXGoalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD79B22CD0D0300E48C7F /* HBXGoalModel.m */; };
+		813FD79F22CD0D1900E48C7F /* HBXGoalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD79E22CD0D1900E48C7F /* HBXGoalTableViewCell.m */; };
+		813FD7A122CD19DC00E48C7F /* myConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 813FD7A022CD19DC00E48C7F /* myConfig.json */; };
+		813FD7A422CD231500E48C7F /* MySettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7A322CD231500E48C7F /* MySettingViewController.m */; };
+		813FD7A722CD265500E48C7F /* ZJAvatarSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7A622CD265500E48C7F /* ZJAvatarSettingViewController.m */; };
+		813FD7AA22CD29A200E48C7F /* HBXMessgaeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7A922CD29A200E48C7F /* HBXMessgaeListViewController.m */; };
+		813FD7AD22CD29AF00E48C7F /* HBXNickSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7AC22CD29AF00E48C7F /* HBXNickSetViewController.m */; };
+		813FD7B022CD2BF700E48C7F /* HBXFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7AF22CD2BF700E48C7F /* HBXFeedViewController.m */; };
 		81478F2D22C8572500B5F374 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F2C22C8572500B5F374 /* CFNetwork.framework */; };
 		81478F2F22C8572F00B5F374 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F2E22C8572F00B5F374 /* CoreFoundation.framework */; };
 		81478F3122C8573D00B5F374 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3022C8573D00B5F374 /* CoreTelephony.framework */; };
@@ -82,6 +95,30 @@
 		813FD78722CB292E00E48C7F /* HBXNoteDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXNoteDetailCell.m; sourceTree = "<group>"; };
 		813FD78922CB468A00E48C7F /* ToolHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolHelper.h; sourceTree = "<group>"; };
 		813FD78A22CB468A00E48C7F /* ToolHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolHelper.m; sourceTree = "<group>"; };
+		813FD78C22CCA6C500E48C7F /* controllerConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = controllerConfig.json; sourceTree = "<group>"; };
+		813FD78E22CCB29200E48C7F /* HBXActionHeaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXActionHeaderModel.h; sourceTree = "<group>"; };
+		813FD78F22CCB29200E48C7F /* HBXActionHeaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXActionHeaderModel.m; sourceTree = "<group>"; };
+		813FD79122CCB29D00E48C7F /* HBXActionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXActionModel.h; sourceTree = "<group>"; };
+		813FD79222CCB29D00E48C7F /* HBXActionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXActionModel.m; sourceTree = "<group>"; };
+		813FD79422CCF6F900E48C7F /* HBXGoalSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXGoalSettingViewController.h; sourceTree = "<group>"; };
+		813FD79522CCF6F900E48C7F /* HBXGoalSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXGoalSettingViewController.m; sourceTree = "<group>"; };
+		813FD79722CD0CB100E48C7F /* HBXModelListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXModelListViewController.h; sourceTree = "<group>"; };
+		813FD79822CD0CB100E48C7F /* HBXModelListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXModelListViewController.m; sourceTree = "<group>"; };
+		813FD79A22CD0D0300E48C7F /* HBXGoalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXGoalModel.h; sourceTree = "<group>"; };
+		813FD79B22CD0D0300E48C7F /* HBXGoalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXGoalModel.m; sourceTree = "<group>"; };
+		813FD79D22CD0D1900E48C7F /* HBXGoalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXGoalTableViewCell.h; sourceTree = "<group>"; };
+		813FD79E22CD0D1900E48C7F /* HBXGoalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXGoalTableViewCell.m; sourceTree = "<group>"; };
+		813FD7A022CD19DC00E48C7F /* myConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = myConfig.json; sourceTree = "<group>"; };
+		813FD7A222CD231500E48C7F /* MySettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySettingViewController.h; sourceTree = "<group>"; };
+		813FD7A322CD231500E48C7F /* MySettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySettingViewController.m; sourceTree = "<group>"; };
+		813FD7A522CD265500E48C7F /* ZJAvatarSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJAvatarSettingViewController.h; sourceTree = "<group>"; };
+		813FD7A622CD265500E48C7F /* ZJAvatarSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJAvatarSettingViewController.m; sourceTree = "<group>"; };
+		813FD7A822CD29A200E48C7F /* HBXMessgaeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXMessgaeListViewController.h; sourceTree = "<group>"; };
+		813FD7A922CD29A200E48C7F /* HBXMessgaeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXMessgaeListViewController.m; sourceTree = "<group>"; };
+		813FD7AB22CD29AF00E48C7F /* HBXNickSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXNickSetViewController.h; sourceTree = "<group>"; };
+		813FD7AC22CD29AF00E48C7F /* HBXNickSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXNickSetViewController.m; sourceTree = "<group>"; };
+		813FD7AE22CD2BF700E48C7F /* HBXFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXFeedViewController.h; sourceTree = "<group>"; };
+		813FD7AF22CD2BF700E48C7F /* HBXFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXFeedViewController.m; sourceTree = "<group>"; };
 		81478F2C22C8572500B5F374 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		81478F2E22C8572F00B5F374 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		81478F3022C8573D00B5F374 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -354,6 +391,20 @@
 				81478FBA22CA701700B5F374 /* HBXEditNoteViewController.m */,
 				813FD78322CB21AB00E48C7F /* HBXDetailViewController.h */,
 				813FD78422CB21AB00E48C7F /* HBXDetailViewController.m */,
+				813FD79422CCF6F900E48C7F /* HBXGoalSettingViewController.h */,
+				813FD79522CCF6F900E48C7F /* HBXGoalSettingViewController.m */,
+				813FD79722CD0CB100E48C7F /* HBXModelListViewController.h */,
+				813FD79822CD0CB100E48C7F /* HBXModelListViewController.m */,
+				813FD7A222CD231500E48C7F /* MySettingViewController.h */,
+				813FD7A322CD231500E48C7F /* MySettingViewController.m */,
+				813FD7A522CD265500E48C7F /* ZJAvatarSettingViewController.h */,
+				813FD7A622CD265500E48C7F /* ZJAvatarSettingViewController.m */,
+				813FD7A822CD29A200E48C7F /* HBXMessgaeListViewController.h */,
+				813FD7A922CD29A200E48C7F /* HBXMessgaeListViewController.m */,
+				813FD7AB22CD29AF00E48C7F /* HBXNickSetViewController.h */,
+				813FD7AC22CD29AF00E48C7F /* HBXNickSetViewController.m */,
+				813FD7AE22CD2BF700E48C7F /* HBXFeedViewController.h */,
+				813FD7AF22CD2BF700E48C7F /* HBXFeedViewController.m */,
 			);
 			path = nodeHome;
 			sourceTree = "<group>";
@@ -369,6 +420,8 @@
 				81478FB122C9FF8500B5F374 /* HBXHomeListCell.m */,
 				813FD78622CB292E00E48C7F /* HBXNoteDetailCell.h */,
 				813FD78722CB292E00E48C7F /* HBXNoteDetailCell.m */,
+				813FD79D22CD0D1900E48C7F /* HBXGoalTableViewCell.h */,
+				813FD79E22CD0D1900E48C7F /* HBXGoalTableViewCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -382,6 +435,12 @@
 				81478FA822C9F3AC00B5F374 /* ZJMySettingItem.m */,
 				81478FB322C9FF9C00B5F374 /* ZJHomdeListModel.h */,
 				81478FB422C9FF9C00B5F374 /* ZJHomdeListModel.m */,
+				813FD78E22CCB29200E48C7F /* HBXActionHeaderModel.h */,
+				813FD78F22CCB29200E48C7F /* HBXActionHeaderModel.m */,
+				813FD79122CCB29D00E48C7F /* HBXActionModel.h */,
+				813FD79222CCB29D00E48C7F /* HBXActionModel.m */,
+				813FD79A22CD0D0300E48C7F /* HBXGoalModel.h */,
+				813FD79B22CD0D0300E48C7F /* HBXGoalModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -409,6 +468,8 @@
 		81BEA37D22C656410031E3AA /* proList */ = {
 			isa = PBXGroup;
 			children = (
+				813FD7A022CD19DC00E48C7F /* myConfig.json */,
+				813FD78C22CCA6C500E48C7F /* controllerConfig.json */,
 				81478F7522C9AEF500B5F374 /* app */,
 				81478F6422C9ADB100B5F374 /* GFCalendar */,
 				81478F5122C8CF3600B5F374 /* common */,
@@ -515,6 +576,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813FD78D22CCA6C500E48C7F /* controllerConfig.json in Resources */,
+				813FD7A122CD19DC00E48C7F /* myConfig.json in Resources */,
 				81BEA38B22C656430031E3AA /* LaunchScreen.storyboard in Resources */,
 				81BEA38822C656430031E3AA /* Assets.xcassets in Resources */,
 				81BEA39522C6592F0031E3AA /* Podfile in Resources */,
@@ -597,19 +660,27 @@
 				81478FB522C9FF9C00B5F374 /* ZJHomdeListModel.m in Sources */,
 				81478F5722C8CFC800B5F374 /* RootNavViewController.m in Sources */,
 				81478FAC22C9F43C00B5F374 /* NSObject-ClassName.m in Sources */,
+				813FD7AA22CD29A200E48C7F /* HBXMessgaeListViewController.m in Sources */,
+				813FD79022CCB29200E48C7F /* HBXActionHeaderModel.m in Sources */,
 				813FD78522CB21AB00E48C7F /* HBXDetailViewController.m in Sources */,
+				813FD79922CD0CB100E48C7F /* HBXModelListViewController.m in Sources */,
 				81478FA922C9F3AC00B5F374 /* ZJMySettingItem.m in Sources */,
 				81478FB822CA700400B5F374 /* HBXBaseViewController.m in Sources */,
+				813FD7A722CD265500E48C7F /* ZJAvatarSettingViewController.m in Sources */,
 				813FD77F22CB058B00E48C7F /* ZJAlertManager.m in Sources */,
+				813FD7B022CD2BF700E48C7F /* HBXFeedViewController.m in Sources */,
 				81478FB222C9FF8500B5F374 /* HBXHomeListCell.m in Sources */,
 				81BEA38322C656410031E3AA /* ViewController.m in Sources */,
 				813FD78B22CB468A00E48C7F /* ToolHelper.m in Sources */,
+				813FD79322CCB29D00E48C7F /* HBXActionModel.m in Sources */,
 				81478F6022C8D22100B5F374 /* UIDevice+UIDeviceExt.m in Sources */,
 				81478F4822C8C7BE00B5F374 /* AppNavigator.m in Sources */,
 				81478F5D22C8D1C200B5F374 /* UIDevice+Addtional.m in Sources */,
 				81478F8422C9CE2300B5F374 /* LoginViewController.m in Sources */,
+				813FD7A422CD231500E48C7F /* MySettingViewController.m in Sources */,
 				81478FA622C9F33A00B5F374 /* HBXMyTableViewCell.m in Sources */,
 				81478F7422C9ADB100B5F374 /* GFCalendarMonth.m in Sources */,
+				813FD79C22CD0D0300E48C7F /* HBXGoalModel.m in Sources */,
 				81478FA322C9F2DD00B5F374 /* ZJBaseItem.m in Sources */,
 				81478F7822C9AF1100B5F374 /* AppContext.m in Sources */,
 				81BEA38E22C656430031E3AA /* main.m in Sources */,
@@ -623,8 +694,11 @@
 				81478F9222C9ED5700B5F374 /* HBXHisHomeViewController.m in Sources */,
 				81478F8D22C9EC8C00B5F374 /* UIColor+LX.m in Sources */,
 				81478F7322C9ADB100B5F374 /* NSDate+GFCalendar.m in Sources */,
+				813FD7AD22CD29AF00E48C7F /* HBXNickSetViewController.m in Sources */,
+				813FD79622CCF6F900E48C7F /* HBXGoalSettingViewController.m in Sources */,
 				81478F8022C9CDF600B5F374 /* ZJStartViewController.m in Sources */,
 				813FD78222CB0E4F00E48C7F /* UIButton+Addictions.m in Sources */,
+				813FD79F22CD0D1900E48C7F /* HBXGoalTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

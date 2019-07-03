@@ -9,8 +9,13 @@
 #import "MyViewController.h"
 #import "HBXMyTableViewCell.h"
 #import "ZJMySettingItem.h"
+#import "ZJMySettingItem.h"
+#import "MySettingViewController.h"
+#import "HBXMessgaeListViewController.h"
+#import "HBXFeedViewController.h"
 
-@interface MyViewController ()
+
+@interface MyViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) MyHeaderView *headView;
@@ -22,51 +27,72 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self  initViews];
+//    [self initData];
     // Do any additional setup after loading the view.
 }
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self initData];
+}
+
+- (void)initData {
+    NSString *path = nil;
+    path = [[NSBundle mainBundle] pathForResource:@"myConfig" ofType:@"json"];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    if (dict) {
+        [self handleConfig:dict[@"data"]];
+    }
+   
+}
+
+- (void)handleConfig:(NSDictionary *)info {
+    if ([info isKindOfClass:[NSDictionary class]]) {
+       
+        
+        NSArray *bottomArray = info[@"itemList"];
+        if (bottomArray.count) {
+            [self.dataArray removeAllObjects];
+            for (NSArray *array in bottomArray) {
+                NSMutableArray *source = [NSMutableArray array];
+                for (NSDictionary *param in array) {
+                    ZJMySettingItem *item = [ZJMySettingItem itemWithDict:param];
+                    [source addObject:item];
+                }
+                if (source.count) {
+                    [self.dataArray addObjectsFromArray:source];
+                }
+            }
+        }
+    }
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataArray.count;
 }
-    
-    
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSArray *array = self.dataArray[section];
-    return array.count;
-}
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    ZJMySettingItem *item = nil;
-    NSArray *array = self.dataArray[indexPath.section];
-    item = [array objectAtIndex:indexPath.row];
-    return item.cellHeight;
+    return 60;
+//    ZJMySettingItem *item = self.dataArray[indexPath.row];
+//    NSArray *array = ;
+//    item = [array objectAtIndex:indexPath.row];
+//    return item.cellHeight;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    ZJMySettingItem *object = nil;
-    NSArray *array = self.dataArray[indexPath.section];
-    object = [array objectAtIndex:indexPath.row];
-//    if ([object isKindOfClass:[ZJMySettingItem class]]) {
-//        ZJMySettingItem *item = object;
-//        if (item.pageType == ZJPageWrongBook) {
-//
-//            NSString *value = [[MisManager shared] ZJGetValueForKey:iSSCANWRONGBOOK];
-//            if (!value  || value.length == 0) {
-//                [[MisManager shared] ZJSetValue:@"1" key:iSSCANWRONGBOOK];
-//                [self.tableView reloadData];
-//            }
-//        }
-//        if (item.selectedBlock) {
-//            item.selectedBlock(nil);
-//        }
-//    }else if ([object isKindOfClass:[ZJMySetHeadItem class]]){
-//        [self gotoMyInfo];
-//    }
+    ZJMySettingItem *object = self.dataArray[indexPath.row];
+    if (object.type == KSetMessage) {
+        HBXMessgaeListViewController *vc = [[HBXMessgaeListViewController alloc] init];
+        [AppNavigator pushViewController:vc animated:YES];
+    }else if(object.type == kSetFeedBack) {        
+        HBXFeedViewController *vc = [[HBXFeedViewController alloc] init];
+        [AppNavigator pushViewController:vc animated:YES];
+    }
+
 }
    
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    id object = nil;
-    NSMutableArray *array = self.dataArray[indexPath.section];
-    object = array[indexPath.row];
-    
+    id object = self.dataArray[indexPath.row];
+   
     HBXMyTableViewCell *cell = nil;
 
     cell = [tableView dequeueReusableCellWithIdentifier:[HBXMyTableViewCell className]];
@@ -74,10 +100,13 @@
         cell = [[HBXMyTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:[HBXMyTableViewCell className]];
     }
-//    [((HBXMyTableViewCell *)cell) hideSepLine: (array.count - 1 == indexPath.row)];
-
     [cell cellHeightWithItem:object];
     return cell;
+}
+
+- (void)headTap {
+    MySettingViewController *vc = [[MySettingViewController alloc] init];
+    [AppNavigator pushViewController:vc animated:YES];
 }
     
 - (void)initViews{
@@ -93,6 +122,10 @@
     
     self.headView = [[MyHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 120)];
     self.tableView.tableHeaderView = self.headView;
+    
+    self.headView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGuest = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(headTap)];
+    [self.headView addGestureRecognizer:tapGuest];
 }
     
 - (NSMutableArray *)dataArray {

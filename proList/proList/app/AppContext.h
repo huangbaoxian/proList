@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)logout;
     
 + (AppContext *)getInstance;
+- (void)saveInfo;
 @end
 
 NS_ASSUME_NONNULL_END

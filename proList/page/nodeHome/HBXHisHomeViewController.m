@@ -10,6 +10,8 @@
 #import "HBXHomeListCell.h"
 #import "ZJHomdeListModel.h"
 #import "HBXCreatNoteViewController.h"
+#import "HBXDetailViewController.h"
+
 
 @interface HBXHisHomeViewController ()<UITableViewDelegate, UITableViewDataSource>
     
@@ -57,13 +59,15 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    ZJHomdeListModel *item = self.dataArray[indexPath.row];    
+//    ZJHomdeListModel *item = self.dataArray[indexPath.row];
     return 80;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    HBXHomeListCell *object = nil;
-    object = self.dataArray[indexPath.row];
+    NSArray *list = [ToolHelper getNoteList];
+    NSDictionary *param = list[indexPath.row];
+    HBXDetailViewController *vc = [[HBXDetailViewController alloc] initWithParam:param];
+    [AppNavigator pushViewController:vc animated:YES];
 }
 
 

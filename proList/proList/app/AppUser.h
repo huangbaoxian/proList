@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *nickName;
 @property (nonatomic, strong) NSString *phone;
 @property (nonatomic, strong) NSString *avatarUrl;
-    
+- (void)updateItem:(NSDictionary *)dic ;
 @end
 
 NS_ASSUME_NONNULL_END
