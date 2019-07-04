@@ -31,7 +31,8 @@
 #import "ZJAlertManager.h"
 #import "UIButton+Addictions.h"
 #import "ToolHelper.h"
-
+#import "UIBarButtonItem+Image.h"
+#import "HBXImageBrowserManager.h"
 
 
 #define UIColorFromRGB(rgbValue) [UIColor \
@@ -172,8 +173,8 @@ alpha:alphaValue]
 
 typedef NS_ENUM(NSUInteger, HBXEditType) {
     HBXEditTypeTitle = 0,
-    HBXEditTypeContent = 1,//解答中
-    HBXEditTypeImage = 2,//解答完成
+    HBXEditTypeContent = 1,//文本
+    HBXEditTypeImage = 2,//图片
    
 };
 

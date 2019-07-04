@@ -22,6 +22,19 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupNavBar];
+    NSInteger x = [self.navigationController.viewControllers count];
+    
+    [SVProgressHUD setMinimumSize:CGSizeMake(100, 100)];
+    [SVProgressHUD setMaximumDismissTimeInterval:1.5];
+    //    [SVProgressHUD setContainerView:self.view];
+    [SVProgressHUD setBackgroundColor:UIColorFromRGBA(0x000000, 0.8)];
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    
+    if (x > 1) {
+        // 多余一级的时候，再创建返回按钮
+        [self setLeftBarButtonItem:[self navigationBackButtonItemWithTarget:self action:@selector(goBack)]];
+    }
+    
     // Do any additional setup after loading the view.
 }
 - (void)showEmptViewWithMessage:(NSString *)message {
@@ -32,11 +45,44 @@
     self.emptLabel.width = SCREEN_WIDTH - 40;
     self.emptLabel.height = 42;
     self.emptView.center = self.view.center;
-    self.emptView.top = 350;;
+    self.emptView.top = 200;
     self.emptLabel.centerX = self.view.centerX;
     self.emptLabel.top = self.emptView.bottom + 30;
     self.emptLabel.text = message;
     
+}
+
+- (void)setLeftBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    if (!barButtonItem) {
+        if ([self.navigationController.viewControllers count] > 1) {
+            self.navigationItem.hidesBackButton = YES;
+        }
+        self.navigationItem.leftBarButtonItems = nil;
+        return;
+    }
+    
+    
+    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects: barButtonItem, nil];
+}
+
+- (void)goBack {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (UIBarButtonItem *)navigationBackButtonItemWithTarget:(id)target action:(SEL)action
+{
+    UIImage         *normalImage =  [UIImage imageNamed: @"icon-back"];
+    UIImage         *normalImage_hl = nil;//[UIImage imageForKey:@"common_btn_back_hl"];
+    UIBarButtonItem *buttonItem = [UIBarButtonItem rsBarButtonItemWithTitle:nil
+                                                                      image:normalImage
+                                                           heightLightImage:normalImage_hl
+                                                               disableImage:nil
+                                                                     target:target
+                                                                     action:action];
+    buttonItem.width = 100;
+    
+    return buttonItem;
 }
 
 
@@ -67,8 +113,6 @@
         _emptLabel.backgroundColor = [UIColor clearColor];
         _emptLabel.userInteractionEnabled = YES;
         
-        UITapGestureRecognizer *tapClick = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(refreshClick:)];
-        [_emptLabel addGestureRecognizer:tapClick];
     }
     return _emptLabel;
 }

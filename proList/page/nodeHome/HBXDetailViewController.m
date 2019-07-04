@@ -11,6 +11,8 @@
 #import "ZJHomdeListModel.h"
 #import "HBXCreatNoteViewController.h"
 #import "HBXNoteDetailCell.h"
+#import "GKPhotoBrowser.h"
+#import "HBXImageBrowserManager.h"
 
 
 @interface HBXDetailViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -18,7 +20,7 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) NSMutableDictionary *param;
-
+@property (nonatomic, strong) HBXImageBrowserManager *manager;
 
 @end
 
@@ -61,10 +63,25 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    HBXHomeListCell *object = nil;
-//    NSArray *array = self.dataArray[indexPath.section];
-//    object = [array objectAtIndex:indexPath.row];
-//
+        
+    ZJHomdeListModel *item = self.dataArray[indexPath.row];
+    NSMutableArray *itemArray = [NSMutableArray array];
+    
+    int index = 0;
+    
+    for (int i = 0 ; i < self.dataArray.count; i++) {
+        ZJHomdeListModel *data = self.dataArray[i];
+        if (data.type == HBXEditTypeImage) {
+             UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:data.content];
+            if (image) {
+                [itemArray addObject:image];
+            }
+            if([item.content isEqualToString:data.content]) {
+                index = i;
+            }
+        }
+    }    
+    [self.manager handleImageArray:itemArray index:index];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -77,8 +94,6 @@
         cell = [[HBXNoteDetailCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:[HBXNoteDetailCell className]];
     }
-    //    [((HBXMyTableViewCell *)cell) hideSepLine: (array.count - 1 == indexPath.row)];
-    
     [cell cellHeightWithItem:object];
     return cell;
 }
@@ -118,4 +133,10 @@
 }
 */
 
+- (HBXImageBrowserManager *)manager {
+    if (!_manager) {
+        _manager = [[HBXImageBrowserManager alloc] init];
+    }
+    return _manager;
+}
 @end

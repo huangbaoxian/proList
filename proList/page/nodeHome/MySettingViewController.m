@@ -107,6 +107,19 @@
     nameView.userInteractionEnabled = YES;
     [nameView addGestureRecognizer:tapGuest];
     
+    
+    UIButton *actionOut = [UIButton buttonWithType:UIButtonTypeCustom];
+    actionOut.frame = CGRectMake(0, self.view.bottom -34 - PHONE_NAVIGATIONBAR_HEIGHT, self.view.width, 34);
+    [actionOut setTitle:@"退出" forState:UIControlStateNormal];
+    [actionOut setBackgroundColor:UIColorFromRGB(0xff6d41)];
+    [self.view addSubview:actionOut];
+    [actionOut addTarget:self action:@selector(loginOutClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+}
+
+- (void)loginOutClick {
+    [APPCONTEXT logout];
 }
 
 - (void)headClick {

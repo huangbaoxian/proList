@@ -47,4 +47,32 @@
     return _contentLabel;
 }
 
++ (BOOL)loginWithAccount:(NSString *)account passWord:(NSString *)password {
+    NSString *tokenKey = [NSString stringWithFormat:@"key%@", account];
+    NSDictionary *dict = [[MisManager getInstance] HBXGetValueForKey:tokenKey];
+    if (dict) {
+        NSString *getPassWord = dict[@"passWord"];
+        if([password isEqualToString:getPassWord]) {
+            return YES;
+        }
+        return NO;
+    }else {
+        NSMutableDictionary *param = [NSMutableDictionary dictionary];
+        param[@"passWord"] = password;
+        param[@"account"] = account;
+        [[MisManager getInstance] HBXSetValue:param key:tokenKey];
+        return YES;
+    }
+    
+}
+
++ (void)setImageWithImageView:(UIImageView *)imageView url:(NSString *)url {
+    if ([url containsString:@"localhost"]) {
+        UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:url];
+        imageView.image = image;
+    }else {
+        [imageView sd_setImageWithURL:[NSURL URLWithString:url ?: @""]];
+    }
+}
+
 @end

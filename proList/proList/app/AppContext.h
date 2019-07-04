@@ -14,12 +14,16 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AppContext : NSObject
 
 @property (nonatomic, strong) AppUser *currentUser;
+@property (nonatomic, strong) NSString *token;
 
 - (BOOL)checkLoginInfo;
 - (void)logout;
     
 + (AppContext *)getInstance;
 - (void)saveInfo;
+- (void)loginSuccessToken:(NSString *)token;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

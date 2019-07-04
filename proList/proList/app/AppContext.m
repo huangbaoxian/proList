@@ -23,25 +23,42 @@ static AppContext *_appContext = nil;
 - (instancetype)init{
     if (self = [super init]) {
         
-        NSDictionary *dict = [[MisManager getInstance] HBXGetValueForKey:@"account"];
-        AppUser *appuser=  [[AppUser alloc] init];
-        if (dict) {
-            [appuser updateItem:dict];
+     
+        
+        NSString *token  = [[MisManager getInstance] HBXGetValueForKey:@"token"];
+        if (token && token.length > 0) {
+            _token = token;
         }
-        _currentUser = appuser;
         
     }
     return self;
 }
 
+- (void)loginSuccessToken:(NSString *)token {
+    [[MisManager getInstance] HBXSetValue:token key:@"token"];
+    self.token = token;
+    
+    NSDictionary *dict = [[MisManager getInstance] HBXGetValueForKey:self.token];
+    AppUser *appuser=  [[AppUser alloc] init];
+    if (dict) {
+        [appuser updateItem:dict];
+    }
+    _currentUser = appuser;
+}
+
 - (void)saveInfo {
     NSDictionary *dict = [self.currentUser mj_keyValues];
-    [[MisManager getInstance] HBXSetValue:dict key:@"account"];
+    [[MisManager getInstance] HBXSetValue:dict key:self.token];
+}
+
+- (void)logout {
+    self.currentUser = [[AppUser alloc] init];
+    [[MisManager getInstance] HBXSetValue:@"" key:@"token"];
+    [AppNavigator openLoginViewController];
 }
 
 - (BOOL)checkLoginInfo{
-    return YES;
-    if (self.currentUser && self.currentUser.token.length > 0) {
+    if (self.token && self.token.length > 0) {
         return YES;
     }
     return NO;

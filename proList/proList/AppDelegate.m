@@ -32,7 +32,13 @@
     [ self.window makeKeyWindow];
     [self.window makeKeyAndVisible];
     
-    [AppNavigator openMainViewController];
+    if ([APPCONTEXT checkLoginInfo]) {
+        [AppNavigator openMainViewController];
+    }else {
+        [AppNavigator openLoginViewController];
+    }
+    
+    
     JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
     entity.types = JPAuthorizationOptionAlert|JPAuthorizationOptionBadge|JPAuthorizationOptionSound|UNAuthorizationOptionProvidesAppNotificationSettings;
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {

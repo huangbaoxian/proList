@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *date;
 @property (nonatomic, strong) NSString *image;
+@property (nonatomic, strong) NSArray *list;
 
 
 @end

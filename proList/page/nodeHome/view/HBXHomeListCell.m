@@ -31,9 +31,10 @@
 }
 
 - (void)cellHeightWithItem:(ZJHomdeListModel *)model {
-    UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:model.image];
-    NSLog(@"model.content: %@  %@", model.image, image);
-    self.headView.image = image;
+//    UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:model.image];
+//    NSLog(@"model.content: %@  %@", model.image, image);
+//    self.headView.image = image;
+    [ToolHelper setImageWithImageView:self.headView url:model.image];
     self.contentLabel.text = model.title;
     self.dateLabel.text = model.date;
 }
@@ -66,6 +67,14 @@
         make.trailing.equalTo(self.container).offset(-15);
     }];
     
+    UIView *seplineView = [[UIView alloc] init];
+    seplineView.backgroundColor = UIColorFromRGB(0xf4f4f4);
+    [self.container addSubview:seplineView];
+    [seplineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.trailing.bottom.equalTo(self.container);
+        make.height.mas_equalTo(1);
+    }];
+    
 }
 
     
@@ -77,7 +86,10 @@
 - (UIImageView *)headView {
     if (!_headView) {
         _headView = [[UIImageView alloc] init];
-        _headView.contentMode = UIViewContentModeScaleAspectFit;
+//        _headView.contentMode = UIViewContentModeScaleAspectFit;
+        _headView.contentMode = UIViewContentModeScaleAspectFill;
+        _headView.autoresizingMask = UIViewAutoresizingNone;
+        _headView.layer.masksToBounds = YES;
     }
     return _headView;
 }
@@ -95,6 +107,8 @@
         _contentLabel = [[UILabel alloc] init];
         _contentLabel.font = [UIFont systemFontOfSize:14.0];
         _contentLabel.textColor = UIColorFromRGB(0x333333);
+        _contentLabel.textAlignment = NSTextAlignmentCenter;
+        _contentLabel.numberOfLines = 0;
     }
     return _contentLabel;
 }

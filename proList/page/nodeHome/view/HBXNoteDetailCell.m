@@ -40,8 +40,7 @@
             break;
         case HBXEditTypeImage: {
                 self.contentImage.hidden = NO;
-                UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:model.content];
-                self.contentImage.image = image;
+                [ToolHelper setImageWithImageView:self.contentImage url:model.content];
             }
             break;            
         default:
@@ -83,6 +82,8 @@
         _contentLabel = [[UILabel alloc] init];
         _contentLabel.font = [UIFont systemFontOfSize:14.0];
         _contentLabel.textColor = UIColorFromRGB(0x333333);
+        _contentLabel.textAlignment = NSTextAlignmentCenter;
+        _contentLabel.numberOfLines = 0;
     }
     return _contentLabel;
 }

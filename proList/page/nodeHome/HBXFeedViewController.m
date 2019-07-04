@@ -26,7 +26,7 @@
 }
 - (void)buildViews{
     self.view.backgroundColor = UIColorFromRGB(0xf8f8f8);
-    self.textView = [[UITextView alloc] initWithFrame:CGRectMake(15, PHONE_NAVIGATIONBAR_HEIGHT + 10, SCREEN_WIDTH - 30, 150)];
+    self.textView = [[UITextView alloc] initWithFrame:CGRectMake(15,  10, SCREEN_WIDTH - 30, 150)];
     [self.textView setFont:[UIFont systemFontOfSize:15.f]];
     [self.textView setTextColor:UIColorFromRGB(0x333333)];
     self.textView.delegate = self;

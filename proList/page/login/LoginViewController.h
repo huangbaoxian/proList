@@ -2,15 +2,15 @@
 //  LoginViewController.h
 //  proList
 //
-//  Created by huangbaoxian on 2019/7/1.
+//  Created by huangbaoxian on 2019/7/4.
 //  Copyright © 2019 黄保贤. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "HBXBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : HBXBaseViewController
 
 @end
 

@@ -22,7 +22,7 @@
 }
 - (void)buildViews{
     [self.view setBackgroundColor:UIColorFromRGB(0xf8f8f8)];
-    self.nickTextField = [[UITextField alloc] initWithFrame:CGRectMake(15, 15 + PHONE_NAVIGATIONBAR_HEIGHT, SCREEN_WIDTH - 30, 44)];
+    self.nickTextField = [[UITextField alloc] initWithFrame:CGRectMake(15, 15, SCREEN_WIDTH - 30, 44)];
     self.nickTextField.placeholder = APPCONTEXT.currentUser.nickName;
     self.nickTextField.delegate = self;
     self.nickTextField.backgroundColor = [UIColor whiteColor];

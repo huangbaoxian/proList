@@ -12,7 +12,6 @@
 #import "HBXCreatNoteViewController.h"
 #import "HBXDetailViewController.h"
 
-
 @interface HBXHisHomeViewController ()<UITableViewDelegate, UITableViewDataSource>
     
 @property (nonatomic, strong) UITableView *tableView;
@@ -27,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"生活点滴";
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupNavBar];
     [self initViews];
@@ -36,6 +36,19 @@
     NSLog(@"%@", list);
     NSArray *data = [ZJHomdeListModel mj_objectArrayWithKeyValuesArray:list];
     [self.dataArray addObjectsFromArray:data];
+    
+   
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"homeDefaultList" ofType:@"json"];
+    NSData *newData = [[NSData alloc] initWithContentsOfFile:path];
+    NSError *error = nil;
+    NSDictionary *dict  = [NSJSONSerialization JSONObjectWithData:newData options:NSJSONReadingMutableContainers error:&error];
+    
+    NSArray *locateList = dict[@"links"];
+    NSArray *newLocateList = [ZJHomdeListModel mj_objectArrayWithKeyValuesArray:locateList];
+    [self.dataArray addObjectsFromArray:newLocateList];
+    //homeDefaultList
+    
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.tableView reloadData];
@@ -62,10 +75,10 @@
 //    ZJHomdeListModel *item = self.dataArray[indexPath.row];
     return 80;
 }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSArray *list = [ToolHelper getNoteList];
-    NSDictionary *param = list[indexPath.row];
+    NSDictionary *param = [self.dataArray[indexPath.row] mj_keyValues];
     HBXDetailViewController *vc = [[HBXDetailViewController alloc] initWithParam:param];
     [AppNavigator pushViewController:vc animated:YES];
 }
