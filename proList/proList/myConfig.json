@@ -5,38 +5,7 @@
                    );
         itemList = (
                     (
-                    {
-                        title = "答疑";
-                        secondTitle = "";
-                        type = 0;
-                        iconUrl = "https://adminpic.chaisenwuli.com/client/icon/tab_answer_ques_select.png";
-                        url = "aizongjie://3";
-                        selectIconUrl = "https://adminpic.chaisenwuli.com/client/icon/tab_answer_ques_select.png";
-                    },
-                    {
-                        title = "我的练习";
-                        secondTitle = "";
-                        type = 0;
-                        iconUrl = "https://adminpic.chaisenwuli.com/client/icon/icon-my-homework.png";
-                        url = "aizongjie://10";
-                        selectIconUrl = "https://adminpic.chaisenwuli.com/client/icon/icon-my-homework.png";
-                    },
-                    {
-                        title = "离线缓存";
-                        secondTitle = "";
-                        type = 0;
-                        iconUrl = "https://adminpic.chaisenwuli.com/client/icon/icon-my-download.png";
-                        url = "aizongjie://12";
-                        selectIconUrl = "https://adminpic.chaisenwuli.com/client/icon/icon-my-download.png";
-                    },
-                    {
-                        title = "咨询客服";
-                        secondTitle = "";
-                        type = 0;
-                        iconUrl = "https://adminpic.chaisenwuli.com/client/icon/icon-my-service.png";
-                        url = "aizongjie://14";
-                        selectIconUrl = "https://adminpic.chaisenwuli.com/client/icon/icon-my-service.png";
-                    },
+                                                            
                      {
                      title = "消息通知";
                      secondTitle = "";

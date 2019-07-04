@@ -81,6 +81,7 @@
     for (int i =0 ; i < self.dataArray.count; i++) {
         HBXActionHeaderModel *model = self.dataArray[i];
         UIView *containerView = [[UIView alloc] init];
+        containerView.backgroundColor = [UIColor whiteColor];
         viewHeight += VIEWHEIGHT;
         NSInteger count =model.data.count/2;
         if(model.data.count %2 > 0) {
@@ -188,7 +189,7 @@
 - (UIView *)container {
     if (!_container) {
         _container = [[UIView alloc] init];
-        _container.backgroundColor = [UIColor redColor];
+//        _container.backgroundColor =
     }
     return _container;
 }
@@ -196,6 +197,7 @@
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
         _scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+        _scrollView.backgroundColor = [UIColor whiteColor];
     }
     return _scrollView;
 }

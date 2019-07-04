@@ -40,9 +40,19 @@
     NSArray *storyList = [ToolHelper getModelList];
     if (storyList.count > 0) {
         NSArray *list = [HBXGoalModel mj_objectArrayWithKeyValuesArray:storyList];
+        
+        if ([list count] == 0) {
+            [self showEmptViewWithMessage:@"暂无内容"];
+        }else {
+            [self hideEmptView];
+        }
+        
         [self.dataArray removeAllObjects];
         [self.dataArray addObjectsFromArray:list];
         [self.tableView reloadData];
+        
+        
+        
     }
     
 }

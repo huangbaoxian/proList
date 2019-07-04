@@ -33,7 +33,7 @@
                           {
                               "name": "吃早餐",
                               "image": "icon_health_breakfast_nol",
-                              "imageSel": "icon_health_breakfast_nol",
+                              "imageSel": "icon_health_breakfast_sel",
                               "time": "08:00:00",
                           },
                           {

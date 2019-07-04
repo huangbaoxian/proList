@@ -52,6 +52,11 @@
     
 }
 
+- (void)hideEmptView {
+    [self.emptView removeFromSuperview];
+    [self.emptLabel removeFromSuperview];
+}
+
 - (void)setLeftBarButtonItem:(UIBarButtonItem *)barButtonItem
 {
     if (!barButtonItem) {

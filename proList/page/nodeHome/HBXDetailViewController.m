@@ -58,7 +58,6 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     ZJHomdeListModel *item = self.dataArray[indexPath.row];
-    NSLog(@"cellHeight: %f", item.cellHeight);
     return item.cellHeight;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
