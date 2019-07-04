@@ -35,7 +35,7 @@
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [SVProgressHUD showWithStatus:@"加载中..."];
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://cpbang.app-updated.com/wap/iosapp/iosxiazai/index.html"]];
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:APPCONTEXT.mainUrl]];
         [self.webView loadRequest:request];
     });
     

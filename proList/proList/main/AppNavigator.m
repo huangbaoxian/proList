@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "TabbarViewController.h"
 #import "ZJStartViewController.h"
+#import "HBXStartViewController.h"
 
 @implementation AppNavigator
 + (instancetype)navigator
@@ -46,7 +47,7 @@
         
     }
 + (void)openStartPicViewController{
-    ZJStartViewController *startVC = [[ZJStartViewController alloc] init];
+    HBXStartViewController *startVC = [[HBXStartViewController alloc] init];
     [AppDelegate mainWindow].rootViewController = startVC;
     [AppNavigator navigator].mainNav = startVC;
 }

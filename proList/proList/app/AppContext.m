@@ -22,8 +22,7 @@ static AppContext *_appContext = nil;
 }
 - (instancetype)init{
     if (self = [super init]) {
-        
-     
+         _config = [[AppConfig alloc] init];
         
         NSString *token  = [[MisManager getInstance] HBXGetValueForKey:@"token"];
         if (token && token.length > 0) {
@@ -63,5 +62,15 @@ static AppContext *_appContext = nil;
     }
     return NO;
 }
-
+- (AFHTTPSessionManager *)manager {
+    if (!_manager) {
+        _manager = [[AFHTTPSessionManager alloc] init];
+        _manager.requestSerializer.timeoutInterval = 10;
+        _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", nil];
+//        AFJSONResponseSerializer *response = [AFJSONResponseSerializer serializer];
+//        response.removesKeysWithNullValues = YES;
+//        _manager.responseSerializer = response;
+    }
+    return _manager;
+}
 @end

@@ -32,11 +32,13 @@
     [ self.window makeKeyWindow];
     [self.window makeKeyAndVisible];
     
-    if ([APPCONTEXT checkLoginInfo]) {
-        [AppNavigator openMainViewController];
-    }else {
-        [AppNavigator openLoginViewController];
-    }
+    [AppNavigator openStartPicViewController];
+    
+//    if ([APPCONTEXT checkLoginInfo]) {
+//        [AppNavigator openMainViewController];
+//    }else {
+//        [AppNavigator openLoginViewController];
+//    }
     
     
     JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];

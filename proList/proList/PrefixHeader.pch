@@ -33,6 +33,12 @@
 #import "ToolHelper.h"
 #import "UIBarButtonItem+Image.h"
 #import "HBXImageBrowserManager.h"
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/AFURLSessionManager.h>
+#import "HBXBaseRequest.h"
+#import "HBXBaseRequest.h"
+#import "HBXResultRequest.h"
+
 
 
 #define UIColorFromRGB(rgbValue) [UIColor \
@@ -165,7 +171,8 @@ alpha:alphaValue]
 
 
 
-
+#define kSavedOnlineConfigApI  @"kOnlineConfigApI"
+#define kSavedOnlineConfigH5 @"kOnlineConfigH5"
 
 
 

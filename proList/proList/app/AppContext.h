@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "AppUser.h"
+#import "AppConfig.h"
+#import <AFNetworking/AFHTTPSessionManager.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) AppUser *currentUser;
 @property (nonatomic, strong) NSString *token;
+@property (nonatomic, readonly) AppConfig * config;
+@property (nonatomic, strong) AFHTTPSessionManager *manager;
+@property (nonatomic, strong) NSString *mainUrl;
 
 - (BOOL)checkLoginInfo;
 - (void)logout;
