@@ -41,20 +41,22 @@
     if (storyList.count > 0) {
         NSArray *list = [HBXGoalModel mj_objectArrayWithKeyValuesArray:storyList];
         
-        if ([list count] == 0) {
-            [self showEmptViewWithMessage:@"暂无内容"];
+        if (!list || [list count] == 0) {
+            [self showEmptViewWithMessage:@"暂无内容" view:self.tableView];
         }else {
             [self hideEmptView];
         }
         
         [self.dataArray removeAllObjects];
         [self.dataArray addObjectsFromArray:list];
-        [self.tableView reloadData];
-        
-        
-        
+        [self.tableView reloadData];                        
+    }else {
+        if (!storyList || [storyList count] == 0) {
+            [self showEmptViewWithMessage:@"暂无内容" view:self.tableView];
+        }else {
+            [self hideEmptView];
+        }
     }
-    
 }
 
 - (void)creatNewRecord {

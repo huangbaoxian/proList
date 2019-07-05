@@ -52,6 +52,21 @@
     
 }
 
+- (void)showEmptViewWithMessage:(NSString *)message view:(UIView *)container {
+    
+    [container addSubview:self.emptView];
+    [container addSubview:self.emptLabel];
+    
+    self.emptLabel.width = SCREEN_WIDTH - 40;
+    self.emptLabel.height = 42;
+    self.emptView.center = self.view.center;
+    self.emptView.top = 200;
+    self.emptLabel.centerX = self.view.centerX;
+    self.emptLabel.top = self.emptView.bottom + 30;
+    self.emptLabel.text = message;
+    
+}
+
 - (void)hideEmptView {
     [self.emptView removeFromSuperview];
     [self.emptLabel removeFromSuperview];

@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MyHeaderView : UIView
 
+- (void)updateHeadview;
+
 @end
 
 NS_ASSUME_NONNULL_END

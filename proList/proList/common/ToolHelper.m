@@ -75,4 +75,16 @@
     }
 }
 
++ (void)setImageWithImageView:(UIImageView *)imageView url:(NSString *)url  defaultImage:(UIImage *)defaultImage {
+    if ([url containsString:@"localhost"]) {
+        UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:url];
+        if (!image) {
+            image = defaultImage;
+        }
+        imageView.image = image;
+    }else {
+        [imageView sd_setImageWithURL:[NSURL URLWithString:url ?: @""] placeholderImage:defaultImage];
+    }
+}
+
 @end

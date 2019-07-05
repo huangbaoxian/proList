@@ -58,13 +58,13 @@
     }];
     
     [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-       make.centerY.equalTo(self.container);
-        make.leading.equalTo(self.headView.mas_trailing).offset(15);
+       make.centerY.equalTo(self.container).offset(-10);
+       make.leading.equalTo(self.headView.mas_trailing).offset(15);
     }];
     
     [self.dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.container);
-        make.trailing.equalTo(self.container).offset(-15);
+        make.centerY.equalTo(self.container).offset(10);
+        make.leading.equalTo(self.headView.mas_trailing).offset(15);
     }];
     
     UIView *seplineView = [[UIView alloc] init];

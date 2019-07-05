@@ -66,6 +66,7 @@
     [ToolHelper saveNote:record];
     
     NSLog(@"storeArray: %@", storeArray);
+    [self.navigationController popToRootViewControllerAnimated:YES];
     
 }
     
@@ -200,7 +201,6 @@
             NSString *url = [NSString stringWithFormat:@"http://localhost/%f.jpg",[[NSDate date] timeIntervalSinceNow]];
             model.content = url;
             
-            
             [[SDImageCache sharedImageCache] storeImage:self.image forKey:url  completion:^{
                 NSLog(@"存储完成");
             }];
@@ -221,6 +221,8 @@
     self.textView.text = @"";
     self.imageView.image = nil;
     self.titleFiled.text = @"";
+    self.image = nil;
+    
 }
 
 
@@ -291,7 +293,6 @@
 - (void)takePhotoFromCamera {
     self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
     self.imagePicker.mediaTypes = @[(NSString *)kUTTypeImage];
-//    [self presentViewController:self.imagePicker animated:YES completion:nil];
     [AppNavigator showModalViewController:self.imagePicker animated:YES];
 }
 
@@ -300,7 +301,6 @@
 - (void)takePhotoFromLibrary {
     self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     self.imagePicker.mediaTypes = @[(NSString *)kUTTypeImage];
-//    [self presentViewController:self.imagePicker animated:YES completion:nil];
     [AppNavigator showModalViewController:self.imagePicker animated:YES];
 }
 

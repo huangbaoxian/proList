@@ -51,9 +51,8 @@
     NSString *url = [NSString stringWithFormat:@"http://localhost/head%f.jpg",[[NSDate date] timeIntervalSinceNow]];
     APPCONTEXT.currentUser.avatarUrl = url;
     
-    [[SDImageCache sharedImageCache] storeImage:self.avatorImage forKey:url  completion:^{
-    
-    }];
+    [[SDImageCache sharedImageCache] storeImage:self.avatorImage forKey:url  completion:nil];
+    [SVProgressHUD dismiss];
     
     [APPCONTEXT saveInfo];
     [self.navigationController popViewControllerAnimated:YES];

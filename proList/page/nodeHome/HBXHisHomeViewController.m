@@ -32,12 +32,23 @@
     [self initViews];
     self.navigationItem.rightBarButtonItem = self.rightBtnItem;
     
+    
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self initData];
+}
+- (void)initData {
+    [self.dataArray removeAllObjects];
+    
     NSArray *list = [ToolHelper getNoteList];
     NSLog(@"%@", list);
     NSArray *data = [ZJHomdeListModel mj_objectArrayWithKeyValuesArray:list];
     [self.dataArray addObjectsFromArray:data];
     
-   
+    
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"homeDefaultList" ofType:@"json"];
     NSData *newData = [[NSData alloc] initWithContentsOfFile:path];
@@ -53,8 +64,8 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.tableView reloadData];
     });
-    
 }
+
 - (void)setupNavBar {
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:AppFont(18), NSForegroundColorAttributeName:SYS_White_Color}];
     self.navigationController.navigationBar.translucent = NO;

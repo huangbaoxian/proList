@@ -34,6 +34,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self initData];
+    [self.headView updateHeadview];
 }
 
 - (void)initData {

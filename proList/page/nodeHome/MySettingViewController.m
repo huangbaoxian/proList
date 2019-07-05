@@ -28,6 +28,10 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:APPCONTEXT.currentUser.avatarUrl];
+    NSLog(@"%@",APPCONTEXT.currentUser.avatarUrl);
+    if (!image) {
+        image = [UIImage imageNamed:@"icon-avater-default"];
+    }
     self.headImageView.image = image;
     
     self.nickLabel.text = APPCONTEXT.currentUser.nickName;

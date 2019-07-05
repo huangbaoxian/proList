@@ -73,11 +73,9 @@
     
 
         NSArray *itemTitles = nil ;
-        itemTitles = @[ @"课程",@"学习",@"我的"];//@"学习方法",//@"错题本",
-        
-        NSArray *itemNormalIcons = @[@"icon-index",@"icon-learn-normal", @"icon-mySet"];//@"zj_learning_method_normal" @"icon-wrongbook_normal",
-        NSArray *itemHighlightedIcons = @[@"icon-index-selected",@"icon-learn-selected",  @"icon-mySet-selected"];//@"zj_learning_method_selected",  ,@"icon-wrongbook_seleted"
-        
+        itemTitles = @[ @"点滴",@"事件",@"我的"];
+        NSArray *itemNormalIcons = @[@"icon-index",@"icon-learn-normal", @"icon-mySet"];
+        NSArray *itemHighlightedIcons = @[@"icon-index-selected",@"icon-learn-selected",  @"icon-mySet-selected"];
         NSArray *itemSelectedBgColors = @[[UIColor clearColor], [UIColor clearColor], [UIColor clearColor]];
         //[UIColor clearColor], [UIColor clearColor],
         _tabBarView = [[ZJTabbar alloc] initWithFrame:CGRectMake(0, self.view.height - PHONE_CUSTOM_TABBAR_HEIGHT, SCREEN_WIDTH, PHONE_CUSTOM_TABBAR_HEIGHT)];

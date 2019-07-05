@@ -29,6 +29,11 @@
     [self setupNavBar];
     [self setUpView];
     
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    //现在时间,你可以输出来看下是什么格式
+    NSDate *datenow = [NSDate date];
+    self.date = [formatter stringFromDate:datenow];        
     // Do any additional setup after loading the view.
 }
     
@@ -37,6 +42,7 @@
     [self.navigationController pushViewController:vc animated:YES];
     
 }
+
 - (void)setupNavBar {
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:AppFont(18), NSForegroundColorAttributeName:SYS_White_Color}];
     self.navigationController.navigationBar.translucent = NO;
@@ -50,9 +56,11 @@
     // 初始化calendarView
 - (void)setupCalendarView {
     GFCalendarView *calendarView = [[GFCalendarView alloc] initWithFrameOrigin:CGPointMake(15, 30) width:kScreen_WIDTH-2*15];
+    WeakSelf
     calendarView.didSelectDayHandler = ^(NSInteger year, NSInteger month, NSInteger day) {
         self.date = [NSString stringWithFormat:@"%zd-%02zd-%02zd", year, month, day];
         NSLog(@"self.date: %@",self.date);
+        [weakSelf btnClick];
     };
     [self.view addSubview:calendarView];
     [self.view addSubview:self.creatNewButton];
@@ -67,7 +75,7 @@
     if (!_creatNewButton) {
         _creatNewButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_creatNewButton setTitleColor:UIColorFromRGB(0xffffff) forState:UIControlStateNormal];
-        [_creatNewButton setTitle:@"记录一下！" forState:UIControlStateNormal];
+        [_creatNewButton setTitle:@"开 始 记 录！" forState:UIControlStateNormal];
         _creatNewButton.titleLabel.font = [UIFont systemFontOfSize:14.0];
         [_creatNewButton setBackgroundColor:UIColorFromRGB(0x4bccbc)];
         [_creatNewButton addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];

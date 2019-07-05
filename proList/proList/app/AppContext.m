@@ -29,6 +29,23 @@ static AppContext *_appContext = nil;
             _token = token;
         }
         
+        NSDictionary *info = [[MisManager getInstance] HBXGetValueForKey:token];
+        AppUser *appUser = [[AppUser alloc] init];
+        if ([token isEqualToString:reviewAccount] && !info) {
+            appUser.nickName = @"随风的风";
+            appUser.avatarUrl = @"https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1562306081&di=69932264a345fea7ecf8b1854309d38d&src=http://pic148.nipic.com/file/20171207/7791170_202333876000_2.jpg";
+            NSDictionary *dict = [appUser mj_keyValues];
+            NSLog(@"saveInfo: %@ %@",dict, self.token);
+            [[MisManager getInstance] HBXSetValue:dict key:self.token];
+        }
+                
+        NSLog(@"info: %@ _token: %@", info ,_token);
+        if (info) {          
+            [appUser updateItem:info];
+        }
+        _currentUser = appUser;
+        
+        
     }
     return self;
 }
@@ -47,6 +64,7 @@ static AppContext *_appContext = nil;
 
 - (void)saveInfo {
     NSDictionary *dict = [self.currentUser mj_keyValues];
+    NSLog(@"saveInfo: %@ %@",dict, self.token);
     [[MisManager getInstance] HBXSetValue:dict key:self.token];
 }
 
@@ -67,9 +85,6 @@ static AppContext *_appContext = nil;
         _manager = [[AFHTTPSessionManager alloc] init];
         _manager.requestSerializer.timeoutInterval = 10;
         _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", nil];
-//        AFJSONResponseSerializer *response = [AFJSONResponseSerializer serializer];
-//        response.removesKeysWithNullValues = YES;
-//        _manager.responseSerializer = response;
     }
     return _manager;
 }

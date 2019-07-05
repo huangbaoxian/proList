@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HBXBaseViewController : UIViewController
 
 - (void)showEmptViewWithMessage:(NSString *)message ;
+- (void)showEmptViewWithMessage:(NSString *)message view:(UIView *)container ;
 - (void)hideEmptView;
 @end
 

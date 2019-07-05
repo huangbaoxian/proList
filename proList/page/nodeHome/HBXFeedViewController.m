@@ -53,7 +53,7 @@
     self.textCount.right = self.maxCount.left;
     
     UIButton *submitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [submitBtn setBackgroundImage:[UIImage imageWithColor:UIColorFromRGB(0xff6d41)] forState:UIControlStateNormal];
+    [submitBtn setBackgroundImage:[UIImage imageWithColor:UIColorFromRGB(0xf4bccbc)] forState:UIControlStateNormal];
     [submitBtn setFrame:CGRectMake(15, self.textView.bottom + 15, SCREEN_WIDTH - 30, 44)];
     submitBtn.layer.masksToBounds = YES;
     submitBtn.layer.cornerRadius = 3;

@@ -23,7 +23,17 @@
     }
     return self;
 }
-    
+
+- (void)updateHeadview {
+//    UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:APPCONTEXT.currentUser.avatarUrl];
+//    if (!image) {
+//        image = [UIImage imageNamed:@"icon-avater-default"];
+//    }
+//    self.headerView.image = image;
+    [ToolHelper setImageWithImageView:self.headerView url:APPCONTEXT.currentUser.avatarUrl defaultImage:[UIImage imageNamed:@"icon-avater-default"]];
+    self.nickNameLabel.text = APPCONTEXT.currentUser.nickName;    
+}
+
 - (void)creatSubView {
     
     [self addSubview:self.headerView];

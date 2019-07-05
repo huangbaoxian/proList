@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)setImageWithImageView:(UIImageView *)imageView url:(NSString *)url;
 
++ (void)setImageWithImageView:(UIImageView *)imageView url:(NSString *)url  defaultImage:(UIImage *)defaultImage;
 @end
 
 NS_ASSUME_NONNULL_END

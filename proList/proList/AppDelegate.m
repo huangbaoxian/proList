@@ -31,7 +31,7 @@
                    
     [ self.window makeKeyWindow];
     [self.window makeKeyAndVisible];
-    
+    [AppContext getInstance];
     [AppNavigator openStartPicViewController];
     
 //    if ([APPCONTEXT checkLoginInfo]) {
