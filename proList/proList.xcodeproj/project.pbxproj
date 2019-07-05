@@ -67,8 +67,6 @@
 		813FDBAB22CE028C00E48C7F /* HBXBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBAA22CE028C00E48C7F /* HBXBaseRequest.m */; };
 		813FDBAE22CE034D00E48C7F /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBAC22CE034D00E48C7F /* AppConfig.m */; };
 		813FDBB122CE253C00E48C7F /* HBXResultRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBB022CE253C00E48C7F /* HBXResultRequest.m */; };
-		813FDBB922CE26B700E48C7F /* HBXStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBB722CE26B700E48C7F /* HBXStartViewController.m */; };
-		813FDBBA22CE26B700E48C7F /* HBXStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813FDBB822CE26B700E48C7F /* HBXStartViewController.xib */; };
 		81478F2D22C8572500B5F374 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F2C22C8572500B5F374 /* CFNetwork.framework */; };
 		81478F2F22C8572F00B5F374 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F2E22C8572F00B5F374 /* CoreFoundation.framework */; };
 		81478F3122C8573D00B5F374 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3022C8573D00B5F374 /* CoreTelephony.framework */; };
@@ -246,9 +244,6 @@
 		813FDBAD22CE034D00E48C7F /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		813FDBAF22CE253C00E48C7F /* HBXResultRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXResultRequest.h; sourceTree = "<group>"; };
 		813FDBB022CE253C00E48C7F /* HBXResultRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXResultRequest.m; sourceTree = "<group>"; };
-		813FDBB622CE26B700E48C7F /* HBXStartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXStartViewController.h; sourceTree = "<group>"; };
-		813FDBB722CE26B700E48C7F /* HBXStartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXStartViewController.m; sourceTree = "<group>"; };
-		813FDBB822CE26B700E48C7F /* HBXStartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBXStartViewController.xib; sourceTree = "<group>"; };
 		81478F2C22C8572500B5F374 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		81478F2E22C8572F00B5F374 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		81478F3022C8573D00B5F374 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -527,9 +522,6 @@
 		813FDBB222CE268200E48C7F /* start */ = {
 			isa = PBXGroup;
 			children = (
-				813FDBB622CE26B700E48C7F /* HBXStartViewController.h */,
-				813FDBB722CE26B700E48C7F /* HBXStartViewController.m */,
-				813FDBB822CE26B700E48C7F /* HBXStartViewController.xib */,
 			);
 			name = start;
 			path = ../../../../../Desktop/start;
@@ -877,7 +869,6 @@
 				81BEA38B22C656430031E3AA /* LaunchScreen.storyboard in Resources */,
 				81BEA38822C656430031E3AA /* Assets.xcassets in Resources */,
 				81BEA39522C6592F0031E3AA /* Podfile in Resources */,
-				813FDBBA22CE26B700E48C7F /* HBXStartViewController.xib in Resources */,
 				813FD7B822CDAE9000E48C7F /* LoginViewController.xib in Resources */,
 				81BEA38622C656410031E3AA /* Main.storyboard in Resources */,
 				813FDBA722CDFE9C00E48C7F /* homeDefaultList.json in Resources */,
@@ -947,7 +938,6 @@
 			files = (
 				81478F4B22C8C7D500B5F374 /* TabbarViewController.m in Sources */,
 				813FD78822CB292E00E48C7F /* HBXNoteDetailCell.m in Sources */,
-				813FDBB922CE26B700E48C7F /* HBXStartViewController.m in Sources */,
 				81478F4F22C8C86000B5F374 /* ZJTabbar.m in Sources */,
 				813FDB8E22CDE4B300E48C7F /* UIImage+MWPhotoBrowser.m in Sources */,
 				813FDB9F22CDE4B300E48C7F /* PSTGridLayoutRow.m in Sources */,
