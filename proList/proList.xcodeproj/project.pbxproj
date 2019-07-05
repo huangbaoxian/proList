@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7066126E22CF4063004DA50B /* HBXStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7066126B22CF4062004DA50B /* HBXStartViewController.m */; };
+		7066126F22CF4063004DA50B /* HBXStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7066126C22CF4062004DA50B /* HBXStartViewController.xib */; };
 		71FEBE951682B14A5B16B96C /* Pods_proList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7635F2765334EF77313E65 /* Pods_proList.framework */; };
 		813FD77F22CB058B00E48C7F /* ZJAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD77E22CB058B00E48C7F /* ZJAlertManager.m */; };
 		813FD78222CB0E4F00E48C7F /* UIButton+Addictions.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78022CB0E4F00E48C7F /* UIButton+Addictions.m */; };
@@ -125,6 +127,9 @@
 /* Begin PBXFileReference section */
 		5C811926B5675EA042FA69D6 /* Pods-proList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proList/Pods-proList.debug.xcconfig"; sourceTree = "<group>"; };
 		5F7635F2765334EF77313E65 /* Pods_proList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7066126B22CF4062004DA50B /* HBXStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXStartViewController.m; sourceTree = "<group>"; };
+		7066126C22CF4062004DA50B /* HBXStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HBXStartViewController.xib; sourceTree = "<group>"; };
+		7066126D22CF4062004DA50B /* HBXStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXStartViewController.h; sourceTree = "<group>"; };
 		813FD77D22CB058A00E48C7F /* ZJAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAlertManager.h; sourceTree = "<group>"; };
 		813FD77E22CB058B00E48C7F /* ZJAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAlertManager.m; sourceTree = "<group>"; };
 		813FD78022CB0E4F00E48C7F /* UIButton+Addictions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addictions.m"; sourceTree = "<group>"; };
@@ -522,6 +527,9 @@
 		813FDBB222CE268200E48C7F /* start */ = {
 			isa = PBXGroup;
 			children = (
+				7066126D22CF4062004DA50B /* HBXStartViewController.h */,
+				7066126B22CF4062004DA50B /* HBXStartViewController.m */,
+				7066126C22CF4062004DA50B /* HBXStartViewController.xib */,
 			);
 			name = start;
 			path = ../../../../../Desktop/start;
@@ -869,6 +877,7 @@
 				81BEA38B22C656430031E3AA /* LaunchScreen.storyboard in Resources */,
 				81BEA38822C656430031E3AA /* Assets.xcassets in Resources */,
 				81BEA39522C6592F0031E3AA /* Podfile in Resources */,
+				7066126F22CF4063004DA50B /* HBXStartViewController.xib in Resources */,
 				813FD7B822CDAE9000E48C7F /* LoginViewController.xib in Resources */,
 				81BEA38622C656410031E3AA /* Main.storyboard in Resources */,
 				813FDBA722CDFE9C00E48C7F /* homeDefaultList.json in Resources */,
@@ -938,6 +947,7 @@
 			files = (
 				81478F4B22C8C7D500B5F374 /* TabbarViewController.m in Sources */,
 				813FD78822CB292E00E48C7F /* HBXNoteDetailCell.m in Sources */,
+				7066126E22CF4063004DA50B /* HBXStartViewController.m in Sources */,
 				81478F4F22C8C86000B5F374 /* ZJTabbar.m in Sources */,
 				813FDB8E22CDE4B300E48C7F /* UIImage+MWPhotoBrowser.m in Sources */,
 				813FDB9F22CDE4B300E48C7F /* PSTGridLayoutRow.m in Sources */,
