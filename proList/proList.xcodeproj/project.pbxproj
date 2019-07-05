@@ -9,6 +9,121 @@
 /* Begin PBXBuildFile section */
 		7066126E22CF4063004DA50B /* HBXStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7066126B22CF4062004DA50B /* HBXStartViewController.m */; };
 		7066126F22CF4063004DA50B /* HBXStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7066126C22CF4062004DA50B /* HBXStartViewController.xib */; };
+		7066127322CF513B004DA50B /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F4A22C8C7D500B5F374 /* TabbarViewController.m */; };
+		7066127422CF513B004DA50B /* HBXNoteDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78722CB292E00E48C7F /* HBXNoteDetailCell.m */; };
+		7066127522CF513B004DA50B /* HBXStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7066126B22CF4062004DA50B /* HBXStartViewController.m */; };
+		7066127622CF513B004DA50B /* ZJTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F4E22C8C86000B5F374 /* ZJTabbar.m */; };
+		7066127722CF513B004DA50B /* UIImage+MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB5D22CDE4B200E48C7F /* UIImage+MWPhotoBrowser.m */; };
+		7066127822CF513B004DA50B /* PSTGridLayoutRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB8322CDE4B200E48C7F /* PSTGridLayoutRow.m */; };
+		7066127922CF513B004DA50B /* UIImage+Addtional.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F5922C8D0B300B5F374 /* UIImage+Addtional.m */; };
+		7066127A22CF513B004DA50B /* MyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F9F22C9F04D00B5F374 /* MyHeaderView.m */; };
+		7066127B22CF513B004DA50B /* GKLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7C222CDDD5900E48C7F /* GKLoadingView.m */; };
+		7066127C22CF513B004DA50B /* AppUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F7A22C9AF2E00B5F374 /* AppUser.m */; };
+		7066127D22CF513B004DA50B /* GFCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F6A22C9ADB100B5F374 /* GFCalendarView.m */; };
+		7066127E22CF513B004DA50B /* GFCalendarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F6522C9ADB100B5F374 /* GFCalendarScrollView.m */; };
+		7066127F22CF513B004DA50B /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F9422C9EF2800B5F374 /* NoteListViewController.m */; };
+		7066128022CF513B004DA50B /* HBXEditNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FBA22CA701700B5F374 /* HBXEditNoteViewController.m */; };
+		7066128122CF513B004DA50B /* PSTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB7822CDE4B200E48C7F /* PSTCollectionViewCell.m */; };
+		7066128222CF513B004DA50B /* HBXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F8722C9D31700B5F374 /* HBXWebViewController.m */; };
+		7066128322CF513B004DA50B /* UIImage+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F8A22C9EC8C00B5F374 /* UIImage+LX.m */; };
+		7066128422CF513B004DA50B /* ZJHomdeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FB422C9FF9C00B5F374 /* ZJHomdeListModel.m */; };
+		7066128522CF513B004DA50B /* RootNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F5622C8CFC800B5F374 /* RootNavViewController.m */; };
+		7066128622CF513B004DA50B /* PSTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB7322CDE4B200E48C7F /* PSTCollectionViewController.m */; };
+		7066128722CF513B004DA50B /* NSObject-ClassName.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FAB22C9F43C00B5F374 /* NSObject-ClassName.m */; };
+		7066128822CF513B004DA50B /* HBXMessgaeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7A922CD29A200E48C7F /* HBXMessgaeListViewController.m */; };
+		7066128922CF513B004DA50B /* HBXActionHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78F22CCB29200E48C7F /* HBXActionHeaderModel.m */; };
+		7066128A22CF513B004DA50B /* HBXDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78422CB21AB00E48C7F /* HBXDetailViewController.m */; };
+		7066128B22CF513B004DA50B /* MWCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB5922CDE4B200E48C7F /* MWCaptionView.m */; };
+		7066128C22CF513B004DA50B /* HBXModelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD79822CD0CB100E48C7F /* HBXModelListViewController.m */; };
+		7066128D22CF513B004DA50B /* PSTCollectionViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB7E22CDE4B200E48C7F /* PSTCollectionViewUpdateItem.m */; };
+		7066128E22CF513B004DA50B /* ZJMySettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FA822C9F3AC00B5F374 /* ZJMySettingItem.m */; };
+		7066128F22CF513B004DA50B /* UIScrollView+GKGestureHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7C422CDDD5900E48C7F /* UIScrollView+GKGestureHandle.m */; };
+		7066129022CF513B004DA50B /* HBXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FB722CA700400B5F374 /* HBXBaseViewController.m */; };
+		7066129122CF513B004DA50B /* PSTCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB7522CDE4B200E48C7F /* PSTCollectionViewFlowLayout.m */; };
+		7066129222CF513B004DA50B /* ZJAvatarSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7A622CD265500E48C7F /* ZJAvatarSettingViewController.m */; };
+		7066129322CF513B004DA50B /* ZJAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD77E22CB058B00E48C7F /* ZJAlertManager.m */; };
+		7066129422CF513B004DA50B /* MWGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB6322CDE4B200E48C7F /* MWGridViewController.m */; };
+		7066129522CF513B004DA50B /* GKPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7CA22CDDD5900E48C7F /* GKPhotoBrowser.m */; };
+		7066129622CF513B004DA50B /* HBXFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7AF22CD2BF700E48C7F /* HBXFeedViewController.m */; };
+		7066129722CF513B004DA50B /* PSTCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB8722CDE4B200E48C7F /* PSTCollectionViewLayout.m */; };
+		7066129822CF513B004DA50B /* HBXHomeListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FB122C9FF8500B5F374 /* HBXHomeListCell.m */; };
+		7066129922CF513B004DA50B /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB7D22CDE4B200E48C7F /* NSIndexPath+PSTCollectionViewAdditions.m */; };
+		7066129A22CF513B004DA50B /* PSTGridLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB8822CDE4B200E48C7F /* PSTGridLayoutItem.m */; };
+		7066129B22CF513B004DA50B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA38222C656410031E3AA /* ViewController.m */; };
+		7066129C22CF513B004DA50B /* ToolHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78A22CB468A00E48C7F /* ToolHelper.m */; };
+		7066129D22CF513B004DA50B /* HBXBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBAA22CE028C00E48C7F /* HBXBaseRequest.m */; };
+		7066129E22CF513B004DA50B /* UIBarButtonItem+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7BA22CDD75000E48C7F /* UIBarButtonItem+Image.m */; };
+		7066129F22CF513B004DA50B /* HBXActionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD79222CCB29D00E48C7F /* HBXActionModel.m */; };
+		706612A022CF513B004DA50B /* UIDevice+UIDeviceExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F5F22C8D22100B5F374 /* UIDevice+UIDeviceExt.m */; };
+		706612A122CF513B004DA50B /* AppNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F4722C8C7BE00B5F374 /* AppNavigator.m */; };
+		706612A222CF513B004DA50B /* UIDevice+Addtional.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F5C22C8D1C200B5F374 /* UIDevice+Addtional.m */; };
+		706612A322CF513B004DA50B /* PSTGridLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB7F22CDE4B200E48C7F /* PSTGridLayoutSection.m */; };
+		706612A422CF513B004DA50B /* MySettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7A322CD231500E48C7F /* MySettingViewController.m */; };
+		706612A522CF513B004DA50B /* MWTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB5F22CDE4B200E48C7F /* MWTapDetectingImageView.m */; };
+		706612A622CF513B004DA50B /* GKPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7CC22CDDD5900E48C7F /* GKPhoto.m */; };
+		706612A722CF513B004DA50B /* GKPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7D322CDDD5900E48C7F /* GKPhotoView.m */; };
+		706612A822CF513B004DA50B /* MWZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB5C22CDE4B200E48C7F /* MWZoomingScrollView.m */; };
+		706612A922CF513B004DA50B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7B522CDAE9000E48C7F /* LoginViewController.m */; };
+		706612AA22CF513B004DA50B /* HBXMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FA522C9F33A00B5F374 /* HBXMyTableViewCell.m */; };
+		706612AB22CF513B004DA50B /* GFCalendarMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F6E22C9ADB100B5F374 /* GFCalendarMonth.m */; };
+		706612AC22CF513B004DA50B /* UIImage+GKDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7D222CDDD5900E48C7F /* UIImage+GKDecoder.m */; };
+		706612AD22CF513B004DA50B /* GKWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7CE22CDDD5900E48C7F /* GKWebImageManager.m */; };
+		706612AE22CF513B004DA50B /* HBXGoalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD79B22CD0D0300E48C7F /* HBXGoalModel.m */; };
+		706612AF22CF513B004DA50B /* GKScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7C722CDDD5900E48C7F /* GKScrollView.m */; };
+		706612B022CF513B004DA50B /* ZJBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FA222C9F2DD00B5F374 /* ZJBaseItem.m */; };
+		706612B122CF513B004DA50B /* AppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F7722C9AF1100B5F374 /* AppContext.m */; };
+		706612B222CF513B004DA50B /* HBXImageBrowserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBA422CDE51C00E48C7F /* HBXImageBrowserManager.m */; };
+		706612B322CF513B004DA50B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA38D22C656430031E3AA /* main.m */; };
+		706612B422CF513B004DA50B /* MisManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FBD22CAFA3700B5F374 /* MisManager.m */; };
+		706612B522CF513B004DA50B /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F5222C8CF4800B5F374 /* UIView+Additions.m */; };
+		706612B622CF513B004DA50B /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F6222C8D2C300B5F374 /* NSString+MD5Addition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		706612B722CF513B004DA50B /* GFCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F6922C9ADB100B5F374 /* GFCalendarCell.m */; };
+		706612B822CF513B004DA50B /* PSTCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB8122CDE4B200E48C7F /* PSTCollectionView.m */; };
+		706612B922CF513B004DA50B /* MWGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB6622CDE4B200E48C7F /* MWGridCell.m */; };
+		706612BA22CF513B004DA50B /* HBXCreatNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478FAE22C9FEC000B5F374 /* HBXCreatNoteViewController.m */; };
+		706612BB22CF513B004DA50B /* PSTCollectionViewItemKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB8022CDE4B200E48C7F /* PSTCollectionViewItemKey.m */; };
+		706612BC22CF513B004DA50B /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F9722C9EF7F00B5F374 /* MyViewController.m */; };
+		706612BD22CF513B004DA50B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA37F22C656410031E3AA /* AppDelegate.m */; };
+		706612BE22CF513B004DA50B /* HBXHisHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F9122C9ED5700B5F374 /* HBXHisHomeViewController.m */; };
+		706612BF22CF513B004DA50B /* UIColor+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F8922C9EC8C00B5F374 /* UIColor+LX.m */; };
+		706612C022CF513B004DA50B /* MWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB6022CDE4B200E48C7F /* MWPhoto.m */; };
+		706612C122CF513B004DA50B /* NSDate+GFCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F6C22C9ADB100B5F374 /* NSDate+GFCalendar.m */; };
+		706612C222CF513B004DA50B /* PSTCollectionViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB7C22CDE4B200E48C7F /* PSTCollectionViewData.m */; };
+		706612C322CF513B004DA50B /* HBXResultRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBB022CE253C00E48C7F /* HBXResultRequest.m */; };
+		706612C422CF513B004DA50B /* HBXNickSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD7AC22CD29AF00E48C7F /* HBXNickSetViewController.m */; };
+		706612C522CF513B004DA50B /* PSTGridLayoutInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB7B22CDE4B200E48C7F /* PSTGridLayoutInfo.m */; };
+		706612C622CF513B004DA50B /* HBXGoalSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD79522CCF6F900E48C7F /* HBXGoalSettingViewController.m */; };
+		706612C722CF513B004DA50B /* ZJStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F7F22C9CDF600B5F374 /* ZJStartViewController.m */; };
+		706612C822CF513B004DA50B /* MWTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB6122CDE4B200E48C7F /* MWTapDetectingView.m */; };
+		706612C922CF513B004DA50B /* MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB5822CDE4B200E48C7F /* MWPhotoBrowser.m */; };
+		706612CA22CF513B004DA50B /* UIButton+Addictions.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78022CB0E4F00E48C7F /* UIButton+Addictions.m */; };
+		706612CB22CF513B004DA50B /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB6B22CDE4B200E48C7F /* DACircularProgressView.m */; };
+		706612CC22CF513B004DA50B /* HBXGoalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD79E22CD0D1900E48C7F /* HBXGoalTableViewCell.m */; };
+		706612CD22CF513B004DA50B /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBAC22CE034D00E48C7F /* AppConfig.m */; };
+		706612CF22CF513B004DA50B /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F4222C857B500B5F374 /* libresolv.tbd */; };
+		706612D022CF513B004DA50B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F4022C8579C00B5F374 /* UserNotifications.framework */; };
+		706612D122CF513B004DA50B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3E22C8578B00B5F374 /* AdSupport.framework */; };
+		706612D222CF513B004DA50B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3C22C8578200B5F374 /* libz.tbd */; };
+		706612D322CF513B004DA50B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3A22C8577100B5F374 /* Security.framework */; };
+		706612D422CF513B004DA50B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3822C8576500B5F374 /* UIKit.framework */; };
+		706612D522CF513B004DA50B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3622C8575A00B5F374 /* Foundation.framework */; };
+		706612D622CF513B004DA50B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3422C8575100B5F374 /* CoreGraphics.framework */; };
+		706612D722CF513B004DA50B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3222C8574600B5F374 /* SystemConfiguration.framework */; };
+		706612D822CF513B004DA50B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3022C8573D00B5F374 /* CoreTelephony.framework */; };
+		706612D922CF513B004DA50B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F2E22C8572F00B5F374 /* CoreFoundation.framework */; };
+		706612DA22CF513B004DA50B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F2C22C8572500B5F374 /* CFNetwork.framework */; };
+		706612DB22CF513B004DA50B /* Pods_proList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7635F2765334EF77313E65 /* Pods_proList.framework */; };
+		706612DD22CF513B004DA50B /* controllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 813FD78C22CCA6C500E48C7F /* controllerConfig.json */; };
+		706612DE22CF513B004DA50B /* GKPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 813FD7D022CDDD5900E48C7F /* GKPhotoBrowser.bundle */; };
+		706612DF22CF513B004DA50B /* myConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 813FD7A022CD19DC00E48C7F /* myConfig.json */; };
+		706612E022CF513B004DA50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38922C656430031E3AA /* LaunchScreen.storyboard */; };
+		706612E122CF513B004DA50B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38722C656430031E3AA /* Assets.xcassets */; };
+		706612E222CF513B004DA50B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA39422C6592F0031E3AA /* Podfile */; };
+		706612E322CF513B004DA50B /* HBXStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7066126C22CF4062004DA50B /* HBXStartViewController.xib */; };
+		706612E422CF513B004DA50B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813FD7B622CDAE9000E48C7F /* LoginViewController.xib */; };
+		706612E522CF513B004DA50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38422C656410031E3AA /* Main.storyboard */; };
+		706612E622CF513B004DA50B /* homeDefaultList.json in Resources */ = {isa = PBXBuildFile; fileRef = 813FDBA622CDFE9B00E48C7F /* homeDefaultList.json */; };
+		706612E722CF513B004DA50B /* MWPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 813FDB8A22CDE4B200E48C7F /* MWPhotoBrowser.bundle */; };
 		71FEBE951682B14A5B16B96C /* Pods_proList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7635F2765334EF77313E65 /* Pods_proList.framework */; };
 		813FD77F22CB058B00E48C7F /* ZJAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD77E22CB058B00E48C7F /* ZJAlertManager.m */; };
 		813FD78222CB0E4F00E48C7F /* UIButton+Addictions.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78022CB0E4F00E48C7F /* UIButton+Addictions.m */; };
@@ -130,6 +245,8 @@
 		7066126B22CF4062004DA50B /* HBXStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXStartViewController.m; sourceTree = "<group>"; };
 		7066126C22CF4062004DA50B /* HBXStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HBXStartViewController.xib; sourceTree = "<group>"; };
 		7066126D22CF4062004DA50B /* HBXStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXStartViewController.h; sourceTree = "<group>"; };
+		706612EC22CF513B004DA50B /* proListTWO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proListTWO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		706612ED22CF513B004DA50B /* proList copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "proList copy-Info.plist"; path = "/Users/asiawang/Desktop/iosCopy/proList/proList/proList copy-Info.plist"; sourceTree = "<absolute>"; };
 		813FD77D22CB058A00E48C7F /* ZJAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAlertManager.h; sourceTree = "<group>"; };
 		813FD77E22CB058B00E48C7F /* ZJAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAlertManager.m; sourceTree = "<group>"; };
 		813FD78022CB0E4F00E48C7F /* UIButton+Addictions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addictions.m"; sourceTree = "<group>"; };
@@ -347,6 +464,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		706612CE22CF513B004DA50B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706612CF22CF513B004DA50B /* libresolv.tbd in Frameworks */,
+				706612D022CF513B004DA50B /* UserNotifications.framework in Frameworks */,
+				706612D122CF513B004DA50B /* AdSupport.framework in Frameworks */,
+				706612D222CF513B004DA50B /* libz.tbd in Frameworks */,
+				706612D322CF513B004DA50B /* Security.framework in Frameworks */,
+				706612D422CF513B004DA50B /* UIKit.framework in Frameworks */,
+				706612D522CF513B004DA50B /* Foundation.framework in Frameworks */,
+				706612D622CF513B004DA50B /* CoreGraphics.framework in Frameworks */,
+				706612D722CF513B004DA50B /* SystemConfiguration.framework in Frameworks */,
+				706612D822CF513B004DA50B /* CoreTelephony.framework in Frameworks */,
+				706612D922CF513B004DA50B /* CoreFoundation.framework in Frameworks */,
+				706612DA22CF513B004DA50B /* CFNetwork.framework in Frameworks */,
+				706612DB22CF513B004DA50B /* Pods_proList.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81BEA37822C656410031E3AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -747,6 +884,7 @@
 				81BEA37C22C656410031E3AA /* Products */,
 				284405D206FF2846BA5A9094 /* Pods */,
 				BAF7C8818B9E1BB512466466 /* Frameworks */,
+				706612ED22CF513B004DA50B /* proList copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -754,6 +892,7 @@
 			isa = PBXGroup;
 			children = (
 				81BEA37B22C656410031E3AA /* proList.app */,
+				706612EC22CF513B004DA50B /* proListTWO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -807,6 +946,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7066127022CF513B004DA50B /* proListTWO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706612E922CF513B004DA50B /* Build configuration list for PBXNativeTarget "proListTWO" */;
+			buildPhases = (
+				7066127122CF513B004DA50B /* [CP] Check Pods Manifest.lock */,
+				7066127222CF513B004DA50B /* Sources */,
+				706612CE22CF513B004DA50B /* Frameworks */,
+				706612DC22CF513B004DA50B /* Resources */,
+				706612E822CF513B004DA50B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = proListTWO;
+			productName = proList;
+			productReference = 706612EC22CF513B004DA50B /* proListTWO.app */;
+			productType = "com.apple.product-type.application";
+		};
 		81BEA37A22C656410031E3AA /* proList */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81BEA39122C656430031E3AA /* Build configuration list for PBXNativeTarget "proList" */;
@@ -862,11 +1020,30 @@
 			projectRoot = "";
 			targets = (
 				81BEA37A22C656410031E3AA /* proList */,
+				7066127022CF513B004DA50B /* proListTWO */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		706612DC22CF513B004DA50B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706612DD22CF513B004DA50B /* controllerConfig.json in Resources */,
+				706612DE22CF513B004DA50B /* GKPhotoBrowser.bundle in Resources */,
+				706612DF22CF513B004DA50B /* myConfig.json in Resources */,
+				706612E022CF513B004DA50B /* LaunchScreen.storyboard in Resources */,
+				706612E122CF513B004DA50B /* Assets.xcassets in Resources */,
+				706612E222CF513B004DA50B /* Podfile in Resources */,
+				706612E322CF513B004DA50B /* HBXStartViewController.xib in Resources */,
+				706612E422CF513B004DA50B /* LoginViewController.xib in Resources */,
+				706612E522CF513B004DA50B /* Main.storyboard in Resources */,
+				706612E622CF513B004DA50B /* homeDefaultList.json in Resources */,
+				706612E722CF513B004DA50B /* MWPhotoBrowser.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81BEA37922C656410031E3AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -920,6 +1097,56 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-proList/Pods-proList-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7066127122CF513B004DA50B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-proList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		706612E822CF513B004DA50B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-proList/Pods-proList-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-proList/Pods-proList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7CE2CDDE266A6814E5805B2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -941,6 +1168,104 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7066127222CF513B004DA50B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7066127322CF513B004DA50B /* TabbarViewController.m in Sources */,
+				7066127422CF513B004DA50B /* HBXNoteDetailCell.m in Sources */,
+				7066127522CF513B004DA50B /* HBXStartViewController.m in Sources */,
+				7066127622CF513B004DA50B /* ZJTabbar.m in Sources */,
+				7066127722CF513B004DA50B /* UIImage+MWPhotoBrowser.m in Sources */,
+				7066127822CF513B004DA50B /* PSTGridLayoutRow.m in Sources */,
+				7066127922CF513B004DA50B /* UIImage+Addtional.m in Sources */,
+				7066127A22CF513B004DA50B /* MyHeaderView.m in Sources */,
+				7066127B22CF513B004DA50B /* GKLoadingView.m in Sources */,
+				7066127C22CF513B004DA50B /* AppUser.m in Sources */,
+				7066127D22CF513B004DA50B /* GFCalendarView.m in Sources */,
+				7066127E22CF513B004DA50B /* GFCalendarScrollView.m in Sources */,
+				7066127F22CF513B004DA50B /* NoteListViewController.m in Sources */,
+				7066128022CF513B004DA50B /* HBXEditNoteViewController.m in Sources */,
+				7066128122CF513B004DA50B /* PSTCollectionViewCell.m in Sources */,
+				7066128222CF513B004DA50B /* HBXWebViewController.m in Sources */,
+				7066128322CF513B004DA50B /* UIImage+LX.m in Sources */,
+				7066128422CF513B004DA50B /* ZJHomdeListModel.m in Sources */,
+				7066128522CF513B004DA50B /* RootNavViewController.m in Sources */,
+				7066128622CF513B004DA50B /* PSTCollectionViewController.m in Sources */,
+				7066128722CF513B004DA50B /* NSObject-ClassName.m in Sources */,
+				7066128822CF513B004DA50B /* HBXMessgaeListViewController.m in Sources */,
+				7066128922CF513B004DA50B /* HBXActionHeaderModel.m in Sources */,
+				7066128A22CF513B004DA50B /* HBXDetailViewController.m in Sources */,
+				7066128B22CF513B004DA50B /* MWCaptionView.m in Sources */,
+				7066128C22CF513B004DA50B /* HBXModelListViewController.m in Sources */,
+				7066128D22CF513B004DA50B /* PSTCollectionViewUpdateItem.m in Sources */,
+				7066128E22CF513B004DA50B /* ZJMySettingItem.m in Sources */,
+				7066128F22CF513B004DA50B /* UIScrollView+GKGestureHandle.m in Sources */,
+				7066129022CF513B004DA50B /* HBXBaseViewController.m in Sources */,
+				7066129122CF513B004DA50B /* PSTCollectionViewFlowLayout.m in Sources */,
+				7066129222CF513B004DA50B /* ZJAvatarSettingViewController.m in Sources */,
+				7066129322CF513B004DA50B /* ZJAlertManager.m in Sources */,
+				7066129422CF513B004DA50B /* MWGridViewController.m in Sources */,
+				7066129522CF513B004DA50B /* GKPhotoBrowser.m in Sources */,
+				7066129622CF513B004DA50B /* HBXFeedViewController.m in Sources */,
+				7066129722CF513B004DA50B /* PSTCollectionViewLayout.m in Sources */,
+				7066129822CF513B004DA50B /* HBXHomeListCell.m in Sources */,
+				7066129922CF513B004DA50B /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
+				7066129A22CF513B004DA50B /* PSTGridLayoutItem.m in Sources */,
+				7066129B22CF513B004DA50B /* ViewController.m in Sources */,
+				7066129C22CF513B004DA50B /* ToolHelper.m in Sources */,
+				7066129D22CF513B004DA50B /* HBXBaseRequest.m in Sources */,
+				7066129E22CF513B004DA50B /* UIBarButtonItem+Image.m in Sources */,
+				7066129F22CF513B004DA50B /* HBXActionModel.m in Sources */,
+				706612A022CF513B004DA50B /* UIDevice+UIDeviceExt.m in Sources */,
+				706612A122CF513B004DA50B /* AppNavigator.m in Sources */,
+				706612A222CF513B004DA50B /* UIDevice+Addtional.m in Sources */,
+				706612A322CF513B004DA50B /* PSTGridLayoutSection.m in Sources */,
+				706612A422CF513B004DA50B /* MySettingViewController.m in Sources */,
+				706612A522CF513B004DA50B /* MWTapDetectingImageView.m in Sources */,
+				706612A622CF513B004DA50B /* GKPhoto.m in Sources */,
+				706612A722CF513B004DA50B /* GKPhotoView.m in Sources */,
+				706612A822CF513B004DA50B /* MWZoomingScrollView.m in Sources */,
+				706612A922CF513B004DA50B /* LoginViewController.m in Sources */,
+				706612AA22CF513B004DA50B /* HBXMyTableViewCell.m in Sources */,
+				706612AB22CF513B004DA50B /* GFCalendarMonth.m in Sources */,
+				706612AC22CF513B004DA50B /* UIImage+GKDecoder.m in Sources */,
+				706612AD22CF513B004DA50B /* GKWebImageManager.m in Sources */,
+				706612AE22CF513B004DA50B /* HBXGoalModel.m in Sources */,
+				706612AF22CF513B004DA50B /* GKScrollView.m in Sources */,
+				706612B022CF513B004DA50B /* ZJBaseItem.m in Sources */,
+				706612B122CF513B004DA50B /* AppContext.m in Sources */,
+				706612B222CF513B004DA50B /* HBXImageBrowserManager.m in Sources */,
+				706612B322CF513B004DA50B /* main.m in Sources */,
+				706612B422CF513B004DA50B /* MisManager.m in Sources */,
+				706612B522CF513B004DA50B /* UIView+Additions.m in Sources */,
+				706612B622CF513B004DA50B /* NSString+MD5Addition.m in Sources */,
+				706612B722CF513B004DA50B /* GFCalendarCell.m in Sources */,
+				706612B822CF513B004DA50B /* PSTCollectionView.m in Sources */,
+				706612B922CF513B004DA50B /* MWGridCell.m in Sources */,
+				706612BA22CF513B004DA50B /* HBXCreatNoteViewController.m in Sources */,
+				706612BB22CF513B004DA50B /* PSTCollectionViewItemKey.m in Sources */,
+				706612BC22CF513B004DA50B /* MyViewController.m in Sources */,
+				706612BD22CF513B004DA50B /* AppDelegate.m in Sources */,
+				706612BE22CF513B004DA50B /* HBXHisHomeViewController.m in Sources */,
+				706612BF22CF513B004DA50B /* UIColor+LX.m in Sources */,
+				706612C022CF513B004DA50B /* MWPhoto.m in Sources */,
+				706612C122CF513B004DA50B /* NSDate+GFCalendar.m in Sources */,
+				706612C222CF513B004DA50B /* PSTCollectionViewData.m in Sources */,
+				706612C322CF513B004DA50B /* HBXResultRequest.m in Sources */,
+				706612C422CF513B004DA50B /* HBXNickSetViewController.m in Sources */,
+				706612C522CF513B004DA50B /* PSTGridLayoutInfo.m in Sources */,
+				706612C622CF513B004DA50B /* HBXGoalSettingViewController.m in Sources */,
+				706612C722CF513B004DA50B /* ZJStartViewController.m in Sources */,
+				706612C822CF513B004DA50B /* MWTapDetectingView.m in Sources */,
+				706612C922CF513B004DA50B /* MWPhotoBrowser.m in Sources */,
+				706612CA22CF513B004DA50B /* UIButton+Addictions.m in Sources */,
+				706612CB22CF513B004DA50B /* DACircularProgressView.m in Sources */,
+				706612CC22CF513B004DA50B /* HBXGoalTableViewCell.m in Sources */,
+				706612CD22CF513B004DA50B /* AppConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81BEA37722C656410031E3AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1061,6 +1386,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		706612EA22CF513B004DA50B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C811926B5675EA042FA69D6 /* Pods-proList.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = proList/proList.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 22GWN3W844;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/proList/PrefixHeader.pch";
+				INFOPLIST_FILE = "proList copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.proList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "proList-develop";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		706612EB22CF513B004DA50B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A883EB444F660F3BB0051DB /* Pods-proList.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = proList/proList.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 22GWN3W844;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/proList/PrefixHeader.pch";
+				INFOPLIST_FILE = "proList copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.proList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "proList-develop";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		81BEA38F22C656430031E3AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1216,6 +1583,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		706612E922CF513B004DA50B /* Build configuration list for PBXNativeTarget "proListTWO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706612EA22CF513B004DA50B /* Debug */,
+				706612EB22CF513B004DA50B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		81BEA37622C656410031E3AA /* Build configuration list for PBXProject "proList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
