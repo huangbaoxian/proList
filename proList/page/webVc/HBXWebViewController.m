@@ -37,28 +37,42 @@
         [SVProgressHUD showWithStatus:@"加载中..."];
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:APPCONTEXT.mainUrl]];
         [self.webView loadRequest:request];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
+        
     });
     
 }
     
 - (void)creatItems {
     
-    CGFloat btnWith = (self.view.width - 30 - 15 * 3)/4;
+    CGFloat btnWith = (self.view.width - 30 - 15 * 4)/5;
     CGFloat btnHeight = KBottomHeight;
     CGFloat space = 15;
     
     self.toolBar.userInteractionEnabled = YES;
-    NSArray *array = @[@"前进",@"后退",@"刷新",@"主页"];
+    NSArray *array = @[@"icon_date_left_nol",@"icon_date_right_nol",@"ic_loading_rotate",@"home", @"退出"];
     for (int i = 0 ; i < array.count; i++) {
         UIButton *btn = [UIButton buttonWithType: UIButtonTypeCustom];
-        [btn setTitle:array[i] forState:UIControlStateNormal];
+        
         btn.titleLabel.font = [UIFont systemFontOfSize:14.0];
         [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         [btn setTitleColor:UIColorFromRGB(0x333333) forState:UIControlStateNormal];
         btn.tag = i + 1000;
         [self.toolBar addSubview:btn];
-        
         btn.frame = CGRectMake(15 + i *(btnWith + space), 0, btnWith, btnHeight);
+        
+        if (i == array.count - 1) {
+            [btn setTitle:@"退出" forState:UIControlStateNormal];
+        }else {
+            UIImageView *imageView = [[UIImageView alloc] init];
+            imageView.frame = CGRectMake((btnWith - 30)/2, 7, 30, 30);
+            [btn addSubview:imageView];
+            imageView.image = [UIImage imageNamed:array[i]];
+        }
+        
+       
     }
 }
     
@@ -88,6 +102,11 @@
                     
                 }
         break;
+        case 4: {
+                NSArray *newList = @[@(1)];
+                newList[3];
+            }
+            break;
         default:
         break;
     }
