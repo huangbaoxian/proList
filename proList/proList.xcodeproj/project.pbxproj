@@ -184,6 +184,10 @@
 		813FDBAB22CE028C00E48C7F /* HBXBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBAA22CE028C00E48C7F /* HBXBaseRequest.m */; };
 		813FDBAE22CE034D00E48C7F /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBAC22CE034D00E48C7F /* AppConfig.m */; };
 		813FDBB122CE253C00E48C7F /* HBXResultRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBB022CE253C00E48C7F /* HBXResultRequest.m */; };
+		813FDBB922CE26B700E48C7F /* HBXStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBB722CE26B700E48C7F /* HBXStartViewController.m */; };
+		813FDBBA22CE26B700E48C7F /* HBXStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813FDBB822CE26B700E48C7F /* HBXStartViewController.xib */; };
+		813FDBBE22D3055800E48C7F /* HBXRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBBC22D3055800E48C7F /* HBXRegisterViewController.m */; };
+		813FDBBF22D3055800E48C7F /* HBXRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813FDBBD22D3055800E48C7F /* HBXRegisterViewController.xib */; };
 		81478F2D22C8572500B5F374 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F2C22C8572500B5F374 /* CFNetwork.framework */; };
 		81478F2F22C8572F00B5F374 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F2E22C8572F00B5F374 /* CoreFoundation.framework */; };
 		81478F3122C8573D00B5F374 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F3022C8573D00B5F374 /* CoreTelephony.framework */; };
@@ -366,6 +370,13 @@
 		813FDBAD22CE034D00E48C7F /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		813FDBAF22CE253C00E48C7F /* HBXResultRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXResultRequest.h; sourceTree = "<group>"; };
 		813FDBB022CE253C00E48C7F /* HBXResultRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXResultRequest.m; sourceTree = "<group>"; };
+		813FDBB622CE26B700E48C7F /* HBXStartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXStartViewController.h; sourceTree = "<group>"; };
+		813FDBB722CE26B700E48C7F /* HBXStartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXStartViewController.m; sourceTree = "<group>"; };
+		813FDBB822CE26B700E48C7F /* HBXStartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBXStartViewController.xib; sourceTree = "<group>"; };
+		813FDBBB22D3055800E48C7F /* HBXRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXRegisterViewController.h; sourceTree = "<group>"; };
+		813FDBBC22D3055800E48C7F /* HBXRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXRegisterViewController.m; sourceTree = "<group>"; };
+		813FDBBD22D3055800E48C7F /* HBXRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBXRegisterViewController.xib; sourceTree = "<group>"; };
+
 		81478F2C22C8572500B5F374 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		81478F2E22C8572F00B5F374 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		81478F3022C8573D00B5F374 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -790,6 +801,9 @@
 				813FD7B422CDAE9000E48C7F /* LoginViewController.h */,
 				813FD7B522CDAE9000E48C7F /* LoginViewController.m */,
 				813FD7B622CDAE9000E48C7F /* LoginViewController.xib */,
+				813FDBBB22D3055800E48C7F /* HBXRegisterViewController.h */,
+				813FDBBC22D3055800E48C7F /* HBXRegisterViewController.m */,
+				813FDBBD22D3055800E48C7F /* HBXRegisterViewController.xib */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -1056,6 +1070,7 @@
 				81BEA39522C6592F0031E3AA /* Podfile in Resources */,
 				7066126F22CF4063004DA50B /* HBXStartViewController.xib in Resources */,
 				813FD7B822CDAE9000E48C7F /* LoginViewController.xib in Resources */,
+				813FDBBF22D3055800E48C7F /* HBXRegisterViewController.xib in Resources */,
 				81BEA38622C656410031E3AA /* Main.storyboard in Resources */,
 				813FDBA722CDFE9C00E48C7F /* homeDefaultList.json in Resources */,
 				813FDBA222CDE4B300E48C7F /* MWPhotoBrowser.bundle in Resources */,
@@ -1294,6 +1309,7 @@
 				813FD7AA22CD29A200E48C7F /* HBXMessgaeListViewController.m in Sources */,
 				813FD79022CCB29200E48C7F /* HBXActionHeaderModel.m in Sources */,
 				813FD78522CB21AB00E48C7F /* HBXDetailViewController.m in Sources */,
+				813FDBBE22D3055800E48C7F /* HBXRegisterViewController.m in Sources */,
 				813FDB8C22CDE4B300E48C7F /* MWCaptionView.m in Sources */,
 				813FD79922CD0CB100E48C7F /* HBXModelListViewController.m in Sources */,
 				813FDB9B22CDE4B300E48C7F /* PSTCollectionViewUpdateItem.m in Sources */,
@@ -1479,7 +1495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1531,7 +1547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1544,17 +1560,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = proList/proList.entitlements;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 22GWN3W844;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JP75VN24PH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/proList/PrefixHeader.pch";
 				INFOPLIST_FILE = proList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.proList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.myshuidi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "proList-develop";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1565,17 +1582,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = proList/proList.entitlements;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 22GWN3W844;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JP75VN24PH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/proList/PrefixHeader.pch";
 				INFOPLIST_FILE = proList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.proList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.myshuidi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "proList-develop";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

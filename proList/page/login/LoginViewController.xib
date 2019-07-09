@@ -14,7 +14,6 @@
             <connections>
                 <outlet property="accountFiled" destination="7ag-vv-mpt" id="C1t-CO-pE0"/>
                 <outlet property="loginButton" destination="xKF-Tg-irs" id="f8L-bq-5ii"/>
-                <outlet property="nichenFiled" destination="2Bf-Uu-vQc" id="Oif-qJ-l5G"/>
                 <outlet property="passWordFiled" destination="Jqe-P1-mUP" id="TFG-kS-CO1"/>
                 <outlet property="titleLabel" destination="Q8b-mG-C4m" id="CMd-r3-wbg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -46,19 +45,24 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请设置昵称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Bf-Uu-vQc">
-                    <rect key="frame" x="60" y="296" width="254" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKF-Tg-irs">
-                    <rect key="frame" x="60" y="404" width="254" height="36"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="登录"/>
+                    <rect key="frame" x="60" y="306" width="254" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
                     <connections>
                         <action selector="loginClick:" destination="-1" eventType="touchUpInside" id="ZvQ-b6-K0T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kP-wZ-cJj">
+                    <rect key="frame" x="73" y="350" width="228" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <state key="normal" title="注册">
+                        <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="registerClick:" destination="-1" eventType="touchUpInside" id="vCq-g7-oXp"/>
                     </connections>
                 </button>
             </subviews>

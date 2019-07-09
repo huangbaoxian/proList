@@ -14,7 +14,7 @@
     
     HBXBaseRequest *request = [[HBXBaseRequest alloc] init];
 //
-    [request sendHttpPostRequestWithParam:@{} method:@"getAppConfig.php?appid=iostestupdate" onComplete:complete];
+    [request sendHttpPostRequestWithParam:@{} method:@"getAppConfig.php?appid=xbios20190705wddd" onComplete:complete];
     
 //    [request sendHttpGetRequestWithParam:@{} method:@"getAppConfig.php?appid=iostestupdate" onComplete:complete];
 }

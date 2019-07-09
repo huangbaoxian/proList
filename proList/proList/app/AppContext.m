@@ -29,22 +29,7 @@ static AppContext *_appContext = nil;
             _token = token;
         }
         
-        NSDictionary *info = [[MisManager getInstance] HBXGetValueForKey:token];
-        AppUser *appUser = [[AppUser alloc] init];
-        if ([token isEqualToString:reviewAccount] && !info) {
-            appUser.nickName = @"随风的风";
-            appUser.avatarUrl = @"https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1562306081&di=69932264a345fea7ecf8b1854309d38d&src=http://pic148.nipic.com/file/20171207/7791170_202333876000_2.jpg";
-            NSDictionary *dict = [appUser mj_keyValues];
-            NSLog(@"saveInfo: %@ %@",dict, self.token);
-            [[MisManager getInstance] HBXSetValue:dict key:self.token];
-        }
-                
-        NSLog(@"info: %@ _token: %@", info ,_token);
-        if (info) {          
-            [appUser updateItem:info];
-        }
-        _currentUser = appUser;
-        
+       [self loadInfo];
         
     }
     return self;
@@ -54,12 +39,27 @@ static AppContext *_appContext = nil;
     [[MisManager getInstance] HBXSetValue:token key:@"token"];
     self.token = token;
     
-    NSDictionary *dict = [[MisManager getInstance] HBXGetValueForKey:self.token];
-    AppUser *appuser=  [[AppUser alloc] init];
-    if (dict) {
-        [appuser updateItem:dict];
+    [self loadInfo];
+}
+
+- (void)loadInfo {
+    NSDictionary *info = [[MisManager getInstance] HBXGetValueForKey:self.token];
+    AppUser *appUser = [[AppUser alloc] init];
+    if ([self.token isEqualToString:reviewAccount] && !info) {
+        appUser.nickName = @"随风的风";
+        appUser.avatarUrl = @"https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1562306081&di=69932264a345fea7ecf8b1854309d38d&src=http://pic148.nipic.com/file/20171207/7791170_202333876000_2.jpg";
+        NSDictionary *dict = [appUser mj_keyValues];
+        NSLog(@"saveInfo: %@ %@",dict, self.token);
+        [[MisManager getInstance] HBXSetValue:dict key:self.token];
     }
-    _currentUser = appuser;
+    
+    NSLog(@"info: %@ _token: %@", info ,_token);
+    if (info) {
+        [appUser updateItem:info];
+    }
+    _currentUser = appUser;
+    
+    
 }
 
 - (void)saveInfo {
