@@ -50,9 +50,15 @@
     }
     [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
     
-    NSString *appKey = @"dc644b0a83d61b720333ed5a";
+    NSString *appKey = @"f3183499e0392acab734180b";
     NSString *channel = @"appstore";
     BOOL isProduction = NO;
+#ifdef DEBUG
+    isProduction = NO;
+#else
+     isProduction = YES;
+#endif
+    
     
     
     [JPUSHService setupWithOption:launchOptions appKey:appKey

@@ -56,16 +56,27 @@
             return YES;
         }
         return NO;
-    }else {
-        NSMutableDictionary *param = [NSMutableDictionary dictionary];
-        param[@"passWord"] = password;
-        param[@"account"] = account;
-        [[MisManager getInstance] HBXSetValue:param key:tokenKey];
-        return YES;
     }
+    return NO;
     
 }
 
++ (BOOL)hasAccountWithAccount:(NSString *)account {
+    NSString *tokenKey = [NSString stringWithFormat:@"key%@", account];
+    NSDictionary *dict = [[MisManager getInstance] HBXGetValueForKey:tokenKey];
+    if (dict) {
+        return YES;
+    }
+    return NO;
+}
+
++ (void)registerWithAccount:(NSString *)account passWord:(NSString *)password {
+    NSString *tokenKey = [NSString stringWithFormat:@"key%@", account];
+    NSMutableDictionary *param = [NSMutableDictionary dictionary];
+    param[@"passWord"] = password;
+    param[@"account"] = account;
+    [[MisManager getInstance] HBXSetValue:param key:tokenKey];
+}
 + (void)setImageWithImageView:(UIImageView *)imageView url:(NSString *)url {
     if ([url containsString:@"localhost"]) {
         UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:url];

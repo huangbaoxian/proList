@@ -20,11 +20,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UILabel *)getNormalLabel;
 
++ (BOOL)hasAccountWithAccount:(NSString *)account;
+
 + (BOOL)loginWithAccount:(NSString *)account passWord:(NSString *)password;
 
 + (void)setImageWithImageView:(UIImageView *)imageView url:(NSString *)url;
 
 + (void)setImageWithImageView:(UIImageView *)imageView url:(NSString *)url  defaultImage:(UIImage *)defaultImage;
+
++ (void)registerWithAccount:(NSString *)account passWord:(NSString *)password ;
 @end
 
 NS_ASSUME_NONNULL_END
