@@ -26,6 +26,14 @@
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(registerSuccess:) name:@"success" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(back) name:@"back" object:nil];
+    
+    UITapGestureRecognizer *tapGuest = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGuest)];
+    [self.view addGestureRecognizer:tapGuest];
+    
+}
+
+- (void)tapGuest {
+    [self.view endEditing:NO];
 }
 
 - (void)back {
@@ -33,6 +41,9 @@
     [self.registerVC removeFromParentViewController];
     
 }
+
+
+
 
 - (void)registerSuccess:(NSNotification *)sender {
     if (sender.object) {

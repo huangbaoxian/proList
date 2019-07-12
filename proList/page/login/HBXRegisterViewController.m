@@ -27,7 +27,15 @@
     
     [self.backButton addTarget:self action:@selector(backButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     // Do any additional setup after loading the view from its nib.
+    
+    UITapGestureRecognizer *tapGuest = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGuest)];
+    [self.view addGestureRecognizer:tapGuest];
 }
+
+- (void)tapGuest {
+    [self.view endEditing:NO];
+}
+
 
 - (void)backButtonClick: (UIButton *)sender {
      [[NSNotificationCenter defaultCenter] postNotificationName:@"back" object:nil];

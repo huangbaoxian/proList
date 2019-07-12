@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7066126E22CF4063004DA50B /* HBXStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7066126B22CF4062004DA50B /* HBXStartViewController.m */; };
-		7066126F22CF4063004DA50B /* HBXStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7066126C22CF4062004DA50B /* HBXStartViewController.xib */; };
 		7066127322CF513B004DA50B /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F4A22C8C7D500B5F374 /* TabbarViewController.m */; };
 		7066127422CF513B004DA50B /* HBXNoteDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FD78722CB292E00E48C7F /* HBXNoteDetailCell.m */; };
-		7066127522CF513B004DA50B /* HBXStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7066126B22CF4062004DA50B /* HBXStartViewController.m */; };
 		7066127622CF513B004DA50B /* ZJTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 81478F4E22C8C86000B5F374 /* ZJTabbar.m */; };
 		7066127722CF513B004DA50B /* UIImage+MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB5D22CDE4B200E48C7F /* UIImage+MWPhotoBrowser.m */; };
 		7066127822CF513B004DA50B /* PSTGridLayoutRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDB8322CDE4B200E48C7F /* PSTGridLayoutRow.m */; };
@@ -119,7 +116,6 @@
 		706612E022CF513B004DA50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38922C656430031E3AA /* LaunchScreen.storyboard */; };
 		706612E122CF513B004DA50B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38722C656430031E3AA /* Assets.xcassets */; };
 		706612E222CF513B004DA50B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA39422C6592F0031E3AA /* Podfile */; };
-		706612E322CF513B004DA50B /* HBXStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7066126C22CF4062004DA50B /* HBXStartViewController.xib */; };
 		706612E422CF513B004DA50B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813FD7B622CDAE9000E48C7F /* LoginViewController.xib */; };
 		706612E522CF513B004DA50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38422C656410031E3AA /* Main.storyboard */; };
 		706612E622CF513B004DA50B /* homeDefaultList.json in Resources */ = {isa = PBXBuildFile; fileRef = 813FDBA622CDFE9B00E48C7F /* homeDefaultList.json */; };
@@ -184,8 +180,6 @@
 		813FDBAB22CE028C00E48C7F /* HBXBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBAA22CE028C00E48C7F /* HBXBaseRequest.m */; };
 		813FDBAE22CE034D00E48C7F /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBAC22CE034D00E48C7F /* AppConfig.m */; };
 		813FDBB122CE253C00E48C7F /* HBXResultRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBB022CE253C00E48C7F /* HBXResultRequest.m */; };
-		813FDBB922CE26B700E48C7F /* HBXStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBB722CE26B700E48C7F /* HBXStartViewController.m */; };
-		813FDBBA22CE26B700E48C7F /* HBXStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813FDBB822CE26B700E48C7F /* HBXStartViewController.xib */; };
 		813FDBBE22D3055800E48C7F /* HBXRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FDBBC22D3055800E48C7F /* HBXRegisterViewController.m */; };
 		813FDBBF22D3055800E48C7F /* HBXRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813FDBBD22D3055800E48C7F /* HBXRegisterViewController.xib */; };
 		81478F2D22C8572500B5F374 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478F2C22C8572500B5F374 /* CFNetwork.framework */; };
@@ -241,14 +235,13 @@
 		81BEA38B22C656430031E3AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA38922C656430031E3AA /* LaunchScreen.storyboard */; };
 		81BEA38E22C656430031E3AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA38D22C656430031E3AA /* main.m */; };
 		81BEA39522C6592F0031E3AA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 81BEA39422C6592F0031E3AA /* Podfile */; };
+		81C44ECA22D8301F0006CE17 /* HBXStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C44EC822D8301F0006CE17 /* HBXStartViewController.m */; };
+		81C44ECB22D8301F0006CE17 /* HBXStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81C44EC922D8301F0006CE17 /* HBXStartViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C811926B5675EA042FA69D6 /* Pods-proList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proList/Pods-proList.debug.xcconfig"; sourceTree = "<group>"; };
 		5F7635F2765334EF77313E65 /* Pods_proList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7066126B22CF4062004DA50B /* HBXStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXStartViewController.m; sourceTree = "<group>"; };
-		7066126C22CF4062004DA50B /* HBXStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HBXStartViewController.xib; sourceTree = "<group>"; };
-		7066126D22CF4062004DA50B /* HBXStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXStartViewController.h; sourceTree = "<group>"; };
 		706612EC22CF513B004DA50B /* proListTWO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proListTWO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		706612ED22CF513B004DA50B /* proList copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "proList copy-Info.plist"; path = "/Users/asiawang/Desktop/iosCopy/proList/proList/proList copy-Info.plist"; sourceTree = "<absolute>"; };
 		813FD77D22CB058A00E48C7F /* ZJAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAlertManager.h; sourceTree = "<group>"; };
@@ -370,13 +363,9 @@
 		813FDBAD22CE034D00E48C7F /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		813FDBAF22CE253C00E48C7F /* HBXResultRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXResultRequest.h; sourceTree = "<group>"; };
 		813FDBB022CE253C00E48C7F /* HBXResultRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXResultRequest.m; sourceTree = "<group>"; };
-		813FDBB622CE26B700E48C7F /* HBXStartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXStartViewController.h; sourceTree = "<group>"; };
-		813FDBB722CE26B700E48C7F /* HBXStartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXStartViewController.m; sourceTree = "<group>"; };
-		813FDBB822CE26B700E48C7F /* HBXStartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBXStartViewController.xib; sourceTree = "<group>"; };
 		813FDBBB22D3055800E48C7F /* HBXRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXRegisterViewController.h; sourceTree = "<group>"; };
 		813FDBBC22D3055800E48C7F /* HBXRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXRegisterViewController.m; sourceTree = "<group>"; };
 		813FDBBD22D3055800E48C7F /* HBXRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBXRegisterViewController.xib; sourceTree = "<group>"; };
-
 		81478F2C22C8572500B5F374 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		81478F2E22C8572F00B5F374 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		81478F3022C8573D00B5F374 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -471,6 +460,9 @@
 		81BEA38C22C656430031E3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BEA38D22C656430031E3AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81BEA39422C6592F0031E3AA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		81C44EC722D8301F0006CE17 /* HBXStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXStartViewController.h; sourceTree = "<group>"; };
+		81C44EC822D8301F0006CE17 /* HBXStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXStartViewController.m; sourceTree = "<group>"; };
+		81C44EC922D8301F0006CE17 /* HBXStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HBXStartViewController.xib; sourceTree = "<group>"; };
 		9A883EB444F660F3BB0051DB /* Pods-proList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proList.release.xcconfig"; path = "Pods/Target Support Files/Pods-proList/Pods-proList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -675,9 +667,6 @@
 		813FDBB222CE268200E48C7F /* start */ = {
 			isa = PBXGroup;
 			children = (
-				7066126D22CF4062004DA50B /* HBXStartViewController.h */,
-				7066126B22CF4062004DA50B /* HBXStartViewController.m */,
-				7066126C22CF4062004DA50B /* HBXStartViewController.xib */,
 			);
 			name = start;
 			path = ../../../../../Desktop/start;
@@ -777,6 +766,9 @@
 		81478F7C22C9CDD700B5F374 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				81C44EC722D8301F0006CE17 /* HBXStartViewController.h */,
+				81C44EC822D8301F0006CE17 /* HBXStartViewController.m */,
+				81C44EC922D8301F0006CE17 /* HBXStartViewController.xib */,
 				813FDBB222CE268200E48C7F /* start */,
 				81478F8F22C9ED3E00B5F374 /* nodeHome */,
 				81478F8522C9D30500B5F374 /* webVc */,
@@ -1050,7 +1042,6 @@
 				706612E022CF513B004DA50B /* LaunchScreen.storyboard in Resources */,
 				706612E122CF513B004DA50B /* Assets.xcassets in Resources */,
 				706612E222CF513B004DA50B /* Podfile in Resources */,
-				706612E322CF513B004DA50B /* HBXStartViewController.xib in Resources */,
 				706612E422CF513B004DA50B /* LoginViewController.xib in Resources */,
 				706612E522CF513B004DA50B /* Main.storyboard in Resources */,
 				706612E622CF513B004DA50B /* homeDefaultList.json in Resources */,
@@ -1068,11 +1059,11 @@
 				81BEA38B22C656430031E3AA /* LaunchScreen.storyboard in Resources */,
 				81BEA38822C656430031E3AA /* Assets.xcassets in Resources */,
 				81BEA39522C6592F0031E3AA /* Podfile in Resources */,
-				7066126F22CF4063004DA50B /* HBXStartViewController.xib in Resources */,
 				813FD7B822CDAE9000E48C7F /* LoginViewController.xib in Resources */,
 				813FDBBF22D3055800E48C7F /* HBXRegisterViewController.xib in Resources */,
 				81BEA38622C656410031E3AA /* Main.storyboard in Resources */,
 				813FDBA722CDFE9C00E48C7F /* homeDefaultList.json in Resources */,
+				81C44ECB22D8301F0006CE17 /* HBXStartViewController.xib in Resources */,
 				813FDBA222CDE4B300E48C7F /* MWPhotoBrowser.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1189,7 +1180,6 @@
 			files = (
 				7066127322CF513B004DA50B /* TabbarViewController.m in Sources */,
 				7066127422CF513B004DA50B /* HBXNoteDetailCell.m in Sources */,
-				7066127522CF513B004DA50B /* HBXStartViewController.m in Sources */,
 				7066127622CF513B004DA50B /* ZJTabbar.m in Sources */,
 				7066127722CF513B004DA50B /* UIImage+MWPhotoBrowser.m in Sources */,
 				7066127822CF513B004DA50B /* PSTGridLayoutRow.m in Sources */,
@@ -1287,7 +1277,6 @@
 			files = (
 				81478F4B22C8C7D500B5F374 /* TabbarViewController.m in Sources */,
 				813FD78822CB292E00E48C7F /* HBXNoteDetailCell.m in Sources */,
-				7066126E22CF4063004DA50B /* HBXStartViewController.m in Sources */,
 				81478F4F22C8C86000B5F374 /* ZJTabbar.m in Sources */,
 				813FDB8E22CDE4B300E48C7F /* UIImage+MWPhotoBrowser.m in Sources */,
 				813FDB9F22CDE4B300E48C7F /* PSTGridLayoutRow.m in Sources */,
@@ -1304,6 +1293,7 @@
 				81478F8E22C9EC8C00B5F374 /* UIImage+LX.m in Sources */,
 				81478FB522C9FF9C00B5F374 /* ZJHomdeListModel.m in Sources */,
 				81478F5722C8CFC800B5F374 /* RootNavViewController.m in Sources */,
+				81C44ECA22D8301F0006CE17 /* HBXStartViewController.m in Sources */,
 				813FDB9522CDE4B300E48C7F /* PSTCollectionViewController.m in Sources */,
 				81478FAC22C9F43C00B5F374 /* NSObject-ClassName.m in Sources */,
 				813FD7AA22CD29A200E48C7F /* HBXMessgaeListViewController.m in Sources */,
